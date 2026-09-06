@@ -1,0 +1,136 @@
+---
+title: "Gateways 2026 Tutorial"
+format:
+  live-revealjs:
+    theme: [default, custom.scss]
+    resources: 
+      - shinylive-sw.js
+    filters:
+      - fontawesome
+      - shinylive
+    highlight-style: atom-one
+    title-slide-attributes: 
+      data-background-image: images/title.png
+      data-background-color: "black"
+    footer: "https://mdlama.github.io/gateways-2026-tutorial/"
+    revealjs-plugins:
+      - drop
+knitr: 
+  opts_chunk: 
+    fig.align: center
+---
+
+{{< include ../../_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Welcome!
+
+Please introduce yourself:
+
+- Name
+- Organization/Institution
+- Why are you here?
+
+## {.smaller style="margin-top: -60px;"}
+
+:::: {.columns}
+
+![](images/BQ_QUBES.png){width="100%" fig-align="center"}
+
+::: {.column width="70%"}
+
+**Celebrating 35+ years: 501(c)3 nonprofit organization**
+
+**Our Mission**: A transformative, collaborative community empowering educators to drive innovation in STEM education for all students. We provide unique professional development opportunities for faculty and future faculty, extensive support for a wide range of joint projects, and a community that has the broad aim of student success in STEM. We work together to foster the continued development of each member of the community and to promote their success.
+:::
+
+::: {.column width="30%"}
+![](images/kezar.jpg)
+:::
+
+::::
+
+## QUBES {.smaller}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+[https://qubeshub.org](https://qubeshub.org)
+
+- OER Resource Library
+- Project Workspaces
+- Education Project Websites
+
+![](images/gateways-paper.png)
+
+:::
+
+::: {.column width="70%"}
+![](images/qubes-website.png){style="border:2px solid;"}
+:::
+
+::::
+
+## OEE-RCN {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**The Open Education Ecosystem Research Coordination Network**
+
+We will establish, incubate, and sustain an Open Education Ecosystem (OEE) designed to address the complex landscape faculty face when adopting computational and data-centric technologies for teaching and learning biology.
+
+| Sam Donovan | M. Drew LaMar | Deb Rook |
+|:------:|:------:|:------:|
+|![](images/pi-sam-donovan.png){width=1in}|![](images/pi-m-drew-lamar.png){width=1in}|![](images/pi-deb-rook.png){width=1in}|
+
+: { .smaller .borderless }
+
+:::
+
+::: {.column width="50%"}
+![](images/oee-matrix.png)
+
+<center>
+<https://oee.qubeshub.org>
+
+<img src="images/nsf.png" style="width: 100px; margin-bottom: 0px">
+[Grant #2418329](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2418329)
+</center>
+
+:::
+
+::::
+
+## The (STEM) Open Education Ecosystem {.smaller}
+
+![](images/open-ecosystem.jpg){fig-align="center"}
+
+## The OER Lifecycle
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/oer-lifecycle.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+
+. . .
+
+**Challenges:**
+
+::: {.incremental}
+
+- Finding resources is the "easy" part
+- Many resources are not modifiable
+- Very few modified resources are shared back
+:::
+
+:::
+
+::::
+
+## The Anatomy of an "Open" Resource
+

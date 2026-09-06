@@ -1,0 +1,8 @@
+---
+title: "Slides"
+format:
+  html:
+    axe: true
+---
+
+{{< revealjs "_site/slides/gateways-2026-tutorial/index.html" >}}
