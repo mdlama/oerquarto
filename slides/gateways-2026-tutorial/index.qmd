@@ -10,7 +10,7 @@ format:
     title-slide-attributes: 
       data-background-image: images/title.png
       data-background-color: "black"
-    footer: "https://mdlama.github.io/gateways-2026-tutorial/"
+    footer: "https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial"
     revealjs-plugins:
       - drop
   pptx: default
@@ -157,6 +157,14 @@ quarto.org/
 Quarto is a next-generation, open-source publishing system. It has expanded upon R Markdown to add new languages and can add more in the future. R Markdown has a lot of packages doing lots of different things, but Quarto has a shared expression for core features. Create dynamic content with Python, R, Julia, and Observable. Enable “single-source publishing” — create Word, PDFs, HTML, etc. from one source, you can make books, websites, presentations. There are many resources about Quarto, I gave a talk at R-Ladies St. Louis, and happy to link, but will only be sharing most critical aspects.
 :::
 
+## Quarto examples
+
+![](images/quarto-gallery.png){width="80%" fig-align="center"}
+
+::: aside
+[Link](https://quarto.org/docs/gallery/)
+:::
+
 ## Anatomy of a Quarto document
 
 ::: r-stack
@@ -269,14 +277,6 @@ Quarto extension gallery by Mickaël Canouil
 [Link](https://m.canouil.dev/quarto-extensions/)
 :::
 
-## Quarto examples
-
-![](images/quarto-gallery.png){width="80%" fig-align="center"}
-
-::: aside
-[Link](https://quarto.org/docs/gallery/)
-:::
-
 ## Hands-on activity
 
 [Getting Started with Quarto](../../start.qmd)
@@ -285,6 +285,18 @@ Quarto extension gallery by Mickaël Canouil
 
 ::: notes
 Enter the world of interactive R and Python in the browser. Running code directly in the browser opens the door for many new and exciting uses for data science on the web.
+:::
+
+## Example: Interactive R console
+
+[![](images/repl.png){width="80%" fig-align="center"}](https://webr.r-wasm.org/latest/)
+
+::: aside
+[https://webr.r-wasm.org/latest/](https://webr.r-wasm.org/latest/)
+:::
+
+::: notes
+For example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.
 :::
 
 ##  {background-image="images/webr-pyodide.png"}
@@ -311,26 +323,6 @@ Python has had a browser solution for a while. Pyodide compiles the Python inter
 
 ::: notes
 Now, R has a similar solution with webR! WebR is the WebAssembly version of R that has been compiled to run in the browser. It's an open-source project primarily driven by Posit, and thanks to the amazing work of many folks but especially George Stagg and Lionel Henry, it is possible to run R code directly in a web browser without the need for traditional servers to execute the code. A user can visit a website and run R code directly without R installed on their device. All that is required is a web server such as GitHub Pages or Netlify.
-:::
-
-## Example: Interactive R console
-
-[![](images/repl.png){width="80%" fig-align="center"}](https://webr.r-wasm.org/latest/)
-
-::: aside
-https://webr.r-wasm.org/latest/
-:::
-
-::: notes
-For example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.
-:::
-
-## Example: Interactive R console
-
-[![](images/repl.png){width="80%" fig-align="center"}](https://webr.r-wasm.org/latest/)
-
-::: aside
-[https://webr.r-wasm.org/latest/](https://webr.r-wasm.org/latest/)
 :::
 
 ::: notes
@@ -410,6 +402,22 @@ for (x in 1:5) {
 After a short loading period, a Run code button will appear. R and Python code can be edited and executed in an editor like this one. Let's run and edit this code as an example.
 :::
 
+## Example: Claus Wilke Introduction to R
+
+[![](images/exercises.png){width="80%" fig-align="center"}](https://wilkelab.org/SDS366/worksheets/intro-to-R.html)
+
+::: aside
+[https://wilkelab.org/SDS366/worksheets/intro-to-R.html](https://wilkelab.org/SDS366/worksheets/intro-to-R.html)
+:::
+
+## Example: Six not-so-basic base R functions
+
+[![](images/blog.png){width="70%" fig-align="center"}](https://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/)
+
+::: aside
+[https://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/](https://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/)
+:::
+
 ## How to install Quarto Live {auto-animate="true"}
 
 Install the extension:
@@ -444,6 +452,31 @@ engine: knitr
 
 {{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}}
 ```
+
+## Installing packages
+
+### As the document loads
+
+``` {.qmd filename="example.qmd"}
+---
+format: live-html
+webr:
+  packages:
+    - dplyr
+    - palmerpenguins
+    - ggplot2
+---
+```
+
+## Installing packages
+
+### Interactively
+
+```` {.qmd filename="example.qmd"}
+```{{webr}}
+install.packages("dplyr", quiet = TRUE)
+```
+````
 
 ## How to use Quarto Live {.auto-animate}
 
@@ -483,44 +516,6 @@ Options include:
 - and more!
 :::
 
-## Installing packages
-
-### As the document loads
-
-``` {.qmd filename="example.qmd"}
----
-format: live-html
-webr:
-  packages:
-    - dplyr
-    - palmerpenguins
-    - ggplot2
----
-```
-
-## Installing packages
-
-### Interactively
-
-```` {.qmd filename="example.qmd"}
-```{{webr}}
-install.packages("dplyr", quiet = TRUE)
-```
-````
-
-## Displaying plots
-
-```{webr}
-mod <- lm(waiting ~ eruptions, data = faithful)
-plot(faithful, main = "Old Faihful Geyser Data")
-abline(mod, col = 'blue')
-summary(mod)
-```
-
-::: notes
-As mentioned earlier, you can also do plots with webR. Graphics work a bit different than normal. It has something called a graphics device that implements primitive drawing commands from R in the browser. It takes advantage of features in a browers when plotting R, things like fonts from other languages or emojis.
-:::
-
 ## Creating exercises
 
 Designating a `webr` chunk as an exercise (with optional setup code, hints, solutions, and grading).
@@ -556,31 +551,23 @@ The answer is 4 ☺️
 :::
 ::::
 
-## Example: Claus Wilke Introduction to R
-
-[![](images/exercises.png){width="80%" fig-align="center"}](https://wilkelab.org/SDS366/worksheets/intro-to-R.html)
-
-::: aside
-[https://wilkelab.org/SDS366/worksheets/intro-to-R.html](https://wilkelab.org/SDS366/worksheets/intro-to-R.html)
-:::
-
-## Example: Six not-so-basic base R functions
-
-[![](images/blog.png){width="70%" fig-align="center"}](https://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/)
-
-::: aside
-[https://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/](https://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/)
-:::
-
 ## webR love 💜
 
 ![](images/webr-love.png){fig-align="center"}
 
-## Hands-on activity
+## Quarto Live Reference
 
-[Quarto Live](../../quarto_live.qmd)
+[Quarto Live Reference](../../quarto_live.qmd)
 
 ##  {background-image="images/shiny.png"}
+
+## Web apps for statistics
+
+![](images/whitlockschluter.jpg){width="35%" fig-align="center"}
+
+::: aside
+[Visualizing statistics](https://www.zoology.ubc.ca/~whitlock/Kingfisher/KFhomepage.htm)
+:::
 
 ## Introduction to Shiny
 
@@ -611,14 +598,12 @@ The traditional way of deploying Shiny involves in a separate server and client.
 #### On-Prem
 
 - [Shiny Server](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shiny-server-open-source) (open source)
-- [Posit Connect](https://shiny.posit.co/py/docs/deploy.html#deploy-to-posit-connect-commercial) (enterprise)
 - [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
 :::
 
 ::: {.column width="40%"}
 #### Cloud
 
-- [shinyapps.io](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shinyapps.io-cloud-hosting)
 - [Posit Connect Cloud](https://connect.posit.cloud/)
 - [Hugging Face](https://huggingface.co/docs/hub/spaces-sdks-docker-shiny)
 - [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
@@ -626,7 +611,7 @@ The traditional way of deploying Shiny involves in a separate server and client.
 :::::
 
 ::: notes
-There are options for hosting Shiny apps, i.e., hosting their syervers, you could have RStudio Server on your laptop. But say you need scalability or additional security for your app, you could pay Posit money to have them host your servers for you with Posit Connect. There are also cloud-based solutions like shinyapps.io and Posit Connect. There's a spectrum in terms of number of users, for some, it might just be a few people and for others, we're talking thousands. There are also some in between, such as academics. Professors might have a few hundred folks looking at their apps, but they don't have infrastructure or the resources to set it up.
+There are options for hosting Shiny apps, i.e., hosting their syervers, you could have RStudio Server on your laptop. But say you need scalability or additional security for your app, you could pay Posit money to have them host your servers for you with Posit Connect. There are also cloud-based solutions like Posit Connect. There's a spectrum in terms of number of users, for some, it might just be a few people and for others, we're talking thousands. There are also some in between, such as academics. Professors might have a few hundred folks looking at their apps, but they don't have infrastructure or the resources to set it up.
 :::
 
 ## Hosting Shiny apps
@@ -635,7 +620,6 @@ Some web services offer scalability, features, and cost:
 
 - [GitHub Pages](https://pages.github.com/)
 - [Netlify](https://www.netlify.com/)
-- [Quarto Pub](https://quartopub.com/)
 
 . . .
 
@@ -649,6 +633,14 @@ This is static web hosting. And it's great in terms of reach and affordabilty. Y
 
 ::: notes
 With Shinylive, anybody can create their own serverless Shiny apps to run in the browser.
+:::
+
+## Example: Claus Wilke's Color Picker App
+
+[![](images/shinylive-example.png){width="80%" fig-align="center"}](https://wilkelab.org/SDS366/apps/bin/choose-color/)
+
+::: aside
+[Link](https://wilkelab.org/SDS366/apps/bin/choose-color/)
 :::
 
 ## Introduction to Shinylive
@@ -842,22 +834,6 @@ Insert a code block with `{shinylive-python}` or `{shinylive-r}`
 ```
 ````
 
-## Example: Shiny for Python docs
-
-[![](images/pyshiny.png){width="80%" fig-align="center"}](https://shiny.posit.co/py/docs/overview.html)
-
-::: aside
-[Link](https://shiny.posit.co/py/docs/overview.html)
-:::
-
-## Example: Claus Wilke's Color Picker App
-
-[![](images/shinylive-example.png){width="80%" fig-align="center"}](https://wilkelab.org/SDS366/apps/bin/choose-color/)
-
-::: aside
-[Link](https://wilkelab.org/SDS366/apps/bin/choose-color/)
-:::
-
 ## Example: Shiny Assistant
 
 [![](images/shinyassistant.png){width="80%" fig-align="center"}](https://gallery.shinyapps.io/assistant/#)
@@ -865,3 +841,15 @@ Insert a code block with `{shinylive-python}` or `{shinylive-r}`
 ::: aside
 [Link](https://gallery.shinyapps.io/assistant/#)
 :::
+
+## Publishing
+
+## Thank you
+
+Slides borrowed heavily from [Isabella Velásquez](https://ivelasq.rbind.io/).
+
+Reference Website: https://mdlama.github.io/oerquarto/
+
+Slides: https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial
+
+Questions?

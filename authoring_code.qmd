@@ -9,17 +9,6 @@ format: html
 
 RStudio has a built-in connection to GitHub's Copilot. Go to Tools \> Global Options \> Code \> Copilot to enable it.
 
-## Use Copilot to create a Mermaid diagram
-
-[Diagrams](https://quarto.org/docs/authoring/diagrams.html)
-
-Create a food web with fox, rabbits, and grass.
-```{mermaid}
-graph TD
-    fox --> rabbit
-    rabbit --> grass
-```
-
 # Data Frames
 
 A great way to display data frames is by using `df-print: paged` in the YAML. 
@@ -85,18 +74,19 @@ See the [Lightbox Figures](https://quarto.org/docs/output-formats/html-lightbox-
 # Code Annotation
 
 ```{r}
-#| echo: fenced
 library(tidyverse)
 library(palmerpenguins)
 penguins |>                                      # <1>
   mutate(                                        # <2>
     bill_ratio = bill_depth_mm / bill_length_mm, # <2>
     bill_area  = bill_depth_mm * bill_length_mm  # <2>
-  )                                              # <2>
+  ) |>                                           # <2>
+  select(species, island, bill_ratio, bill_area) # <3>
 ```
 
-1. Take penguins, and then,
-2. add new columns for the bill ratio and bill area.
+1. Take penguins, and then...
+2. ...add new columns for the bill ratio and bill area, and finally...
+3. ...select only the species, island, bill ratio, and bill area columns.
 
 See [Code Annotation](https://quarto.org/docs/authoring/code-annotation.html) for more details.
 

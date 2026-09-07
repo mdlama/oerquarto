@@ -7,7 +7,7 @@ website:
   comments:
     hypothesis: true
     giscus:
-      repo: mdlama/quartofmn
+      repo: mdlama/oerquarto
   sidebar:
     style: "docked"
     search: true
