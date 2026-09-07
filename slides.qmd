@@ -5,4 +5,8 @@ format:
     axe: true
 ---
 
-{{< revealjs "_site/slides/gateways-2026-tutorial/index.html" >}}
+# Gateways 2026 Tutorial
+
+This tutorial was given on September 8, 2026, prior to the [Gateways 2026](https://sciencegateways.org/gateways2026) conference.
+
+{{< revealjs "slides/gateways-2026-tutorial/index.html" >}}

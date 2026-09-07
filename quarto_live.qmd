@@ -26,11 +26,13 @@ Once there, you can install the quarto-live package using the following command:
 quarto add r-wasm/quarto-live
 ```
 
-# Interactive code blocks
+# Getting started
 
-[Interactive Code Blocks Documentation](https://r-wasm.github.io/quarto-live/getting_started/editor.html)
+[Getting Started Documentation](https://r-wasm.github.io/quarto-live/getting_started/)
 
-# Code persistence
+# Helpful Tidbits
+
+## Code persistence
 
 One useful feature of Quarto Live is that it allows you to persist code across sessions. This means that if you write some code in a code block and then refresh the page, the code will still be there. This is particularly useful for students that need to step a way from a module and continue work later.
 
@@ -48,15 +50,15 @@ format:
 ---
 ```
 
-# Execution time limits
+## Execution time limits
 
 [Execution time limits](https://r-wasm.github.io/quarto-live/getting_started/editor.html#execution-time-limit) can be set for a code block. This can be useful to prevent infinite loops or long-running code from crashing the browser. To set an execution time limit, you can add `#| timelimit: <time in seconds>` to the code block's YAML. For example, `#| timelimit: 5` would set a time limit of 5 seconds for that code block. Set the time limit to `0` to disable it.
 
-# Loading packages and data
+## Loading packages and data
 
 Since live HTML documents utilizing WebR run in the browser and not on a server, authors need to be explicit to Quarto Live about which packages and resources to load and make available to the user. This is done using the `webr` options in the YAML header.
 
-## Packages
+### Packages
 
 For example, to load packages, you can include the following in the YAML header:
 
@@ -97,7 +99,7 @@ If you are combining R code blocks with WebR code blocks (or Python with pyodide
 Make sure to check if an existing package is available in WebR before trying to load it, as not all R packages are currently supported. You can check the [list of available packages](https://repo.r-wasm.org/). If this link takes too long to load, you can also use [this searchable repository](https://rud.is/w/webr-pkgs/) created by Bob Rudis.
 :::
 
-## Files and data
+### Files and data
 
 From Quarto's website:
 
@@ -138,15 +140,15 @@ You can find more information about this feature in the [Loading Resources Docum
 Just like with loading packages, if you are combining R code blocks with WebR code blocks, you will need to load data in both places, as they run in separate environments. The R code blocks will not have access to data loaded in WebR code blocks, and vice versa.
 :::
 
-# Grading with {gradethis}
+## Grading with {gradethis}
 
 [Grading with gradethis](https://r-wasm.github.io/quarto-live/exercises/gradethis.html)
 
-## Shared environments across code blocks
+### Shared environments across code blocks
 
 See the [Managing environments](https://r-wasm.github.io/quarto-live/exercises/environments.html) documentation.
 
-## Prettifying interactive exercises
+### Prettifying interactive exercises
 
 ::: {.callout-tip title="Default aesthetics"}
 *Plot a rectangle using* `geom_tile` *centered at (x,y) = (4, 7). Do not specify any other aesthetics.*

@@ -16,8 +16,8 @@ RStudio has a built-in connection to GitHub's Copilot. Go to Tools \> Global Opt
 Create a food web with fox, rabbits, and grass.
 ```{mermaid}
 graph TD
-    Grass --> Rabbits
-    Rabbits --> Fox
+    fox --> rabbit
+    rabbit --> grass
 ```
 
 # Data Frames
@@ -43,7 +43,13 @@ library(palmerpenguins)
 penguins
 ```
 
-For more advanced tables, including search and filtering, see the [DT (DataTables) package](https://rstudio.github.io/DT/).
+For more advanced tables, including search and filtering, see the [DT (DataTables) package](https://rstudio.github.io/DT/). Here's an example using the `datatable()` function from the DT package to create an interactive table with filtering options:
+
+```{r}
+library(DT)
+datatable(penguins,
+          filter = 'top')
+```
 
 # Code output locations
 
