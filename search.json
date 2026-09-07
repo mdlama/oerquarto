@@ -33,171 +33,36 @@
     ]
   },
   {
-    "objectID": "interactives.html",
-    "href": "interactives.html",
-    "title": "Interactives",
+    "objectID": "extensions.html",
+    "href": "extensions.html",
+    "title": "Useful Extensions",
     "section": "",
-    "text": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine. It is designed to be a portable target for the compilation of high-level languages like C, C++, and Rust, enabling them to run on the web at near-native speed.",
+    "text": "HTML\n\nHTML\n\n\nName\nDescription\nExample\n\n\n\n\nbluesky-comments\nQuarto Shortcode Extension to Embed Comments from Bluesky and add Bluesky-powered comment sections for websites and HTML outputs\nLink\n\n\nelevator\nShortcode for using Elevator.js in HTML documents\nLink\n\n\nembedio\nVariety of shortcodes for including files and content in HTML documents\n\n\n\nlightbox\nCreate lightbox treatments for images in your HTML documents (see also the built-in functionality)\n\n\n\nmodal\nA Quarto extension providing a simple way to create Bootstrap modals in your HTML documents\n\n\n\nnutshell\nEmbed Nutshell expandable explanations in HTML documents\n\n\n\nremember\nAn extension for Quarto to save and restore navigation position across page visits for both HTML documents and Reveal.js presentations\n\n\n\nsocial-embeds\nEmbed content from across the web into HTML documents using a shortcode\n\n\n\nsocial-share\nAdd buttons to share articles on various social media platforms\n\n\n\n\n\n\nCoding\n\nCoding\n\n\nName\nDescription\n\n\n\n\ncode-appendix\nA lua filter to auto-generate an appendix from code chunks\n\n\noutput-styling\nStyle computational output, errors, warnings, and messages in HTML documents\n\n\npyodide\nEmbed Pyodide in HTML documents to enable interactive Python code cells without the need for a Python server\n\n\nquarto-live\nWebAssembly powered ‘live’ formats for Quarto HTML documents and Revealjs slides, adding interactive code blocks and exercises for R and Python\n\n\nqreacto\nRun standalone React components in your project\n\n\nregurgitate\nAutomatic Code Appendix containing all shown code with an option to include results or group by language\n\n\nshinylive\nThis extension lets you embed Shinylive applications in a Quarto document.\n\n\nwebr\nEmbed WebR in HTML documents to enable interactive R code cells without the need for an R server\n\n\n\n\n\nTeaching\n\nTeaching\n\n\nName\nDescription\n\n\n\n\nassign\nA Quarto Extension for educators writing assignments by combining instruction and solution authoring (Note: Some if this functionality is built-in to Quarto through Conditional Content)\n\n\nhoneypot\nAdd hidden instructions to HTML homework assignments to help detect cheating by unauthorized LLM usage\n\n\nquizdown\nAdd an interactive quiz into your HTML document\n\n\n\n\n\nGeneral Utility\n\nGeneral Utility\n\n\nName\nDescription\n\n\n\n\nlinkate\nAutomatically collect all URLs in a document and place them at the end under a “Links” section\n\n\nmolstar\nShortcode to embed proteins and trajectories with Mol*\n\n\nopen-social-comments\nEnables adding Bluesky or Mastodon/Fediverse powered comments to posts and articles\n\n\nunsplash\nShortcode to use Unsplash images within documents\n\n\n\n\n\nMath/LaTeX\n\nMath/LaTeX\n\n\nName\nDescription\n\n\n\n\nbibentry\nA Quarto extension that replicates LaTeX’s \\bibentry command functionality. It allows you to display full bibliography entries inline within your document text\n\n\ncallouty-theorem\nWraps theorems and proofs in callout blocks for better visual appeal\n\n\ncustom-amsthm-environments\nQuarto extension for defining custom amsthm environments\n\n\nimagify\nConvert embedded LaTeX to images and use .tex/.tikz files as image sources\n\n\nlatex-environment\nOutput divs as custom LaTeX environments\n\n\ntikz\nA filter that renders PGF/TikZ diagrams in HTML as SVG\n\n\ntypst-math\nChanges math block syntax from LaTeX to Typst math\n\n\n\n\nPresentations\n\nspeakernotes",
     "crumbs": [
-      "Interactive Documents",
-      "Interactives"
+      "Code and Extensions",
+      "Useful Extensions"
     ]
   },
   {
-    "objectID": "interactives.html#pyodide-for-python",
-    "href": "interactives.html#pyodide-for-python",
-    "title": "Interactives",
-    "section": "Pyodide for Python",
-    "text": "Pyodide for Python\nPyodide is a project that brings the Python runtime to the browser using WebAssembly. It allows you to run Python code in the browser, making it possible to create interactive Python applications without needing a server.",
-    "crumbs": [
-      "Interactive Documents",
-      "Interactives"
-    ]
-  },
-  {
-    "objectID": "interactives.html#webr-for-r",
-    "href": "interactives.html#webr-for-r",
-    "title": "Interactives",
-    "section": "WebR for R",
-    "text": "WebR for R\nWebR is a similar project that brings the R programming language to the browser using WebAssembly. It allows you to run R code in the browser, enabling interactive R applications without the need for a server.",
-    "crumbs": [
-      "Interactive Documents",
-      "Interactives"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "authoring_code.html",
+    "href": "authoring_code.html",
+    "title": "Authoring with Code",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2",
+    "text": "RStudio has a built-in connection to GitHub’s Copilot. Go to Tools &gt; Global Options &gt; Code &gt; Copilot to enable it.\n\n\nDiagrams\nCreate a food web with fox, rabbits, and grass.\n\n\n\n\n\ngraph TD\n    fox --&gt; rabbit\n    rabbit --&gt; grass",
     "crumbs": [
-      "About"
+      "Code and Extensions",
+      "Authoring with Code"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Open Educational Resources with Quarto",
+    "objectID": "authoring_code.html#use-copilot-to-create-a-mermaid-diagram",
+    "href": "authoring_code.html#use-copilot-to-create-a-mermaid-diagram",
+    "title": "Authoring with Code",
     "section": "",
-    "text": "Quick Start\nThe quickest way to start with Quarto is to work in Posit Cloud.\n\nCreate a FREE Posit Cloud account (Sign up)\nOpen the following Posit Cloud project called “Quarto Tutorial”\nWork through the three tutorials:\n\nTutorial: Hello, Quarto\nTutorial: Computations\nTutorial: Authoring\n\n\n\n\n\n\n\n\nNote\n\n\n\nOpen the “Get Started” folder in the “Quarto Tutorial” project to find the Quarto files associated with the three tutorials above. The completed versions of the files are located in the “Completed” subfolder.\n\n\nIf you would like to install Quarto on your computer, visit the Get Started page.",
+    "text": "Diagrams\nCreate a food web with fox, rabbits, and grass.\n\n\n\n\n\ngraph TD\n    fox --&gt; rabbit\n    rabbit --&gt; grass",
     "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Slides",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "publishing.html",
-    "href": "publishing.html",
-    "title": "Publishing",
-    "section": "",
-    "text": "See the Publishing Basics page on the Quarto website for detailed information on publishing. We will discuss some general concepts here for Posit Connect Cloud and GitHub Pages.",
-    "crumbs": [
-      "Publishing"
-    ]
-  },
-  {
-    "objectID": "publishing.html#how-to-publish",
-    "href": "publishing.html#how-to-publish",
-    "title": "Publishing",
-    "section": "How to publish",
-    "text": "How to publish\nIn the Terminal, navigate to the directory where your Quarto document is located and run the following command:\nquarto publish posit-connect-cloud",
-    "crumbs": [
-      "Publishing"
-    ]
-  },
-  {
-    "objectID": "publishing.html#setting-up-git-and-github-for-a-project",
-    "href": "publishing.html#setting-up-git-and-github-for-a-project",
-    "title": "Publishing",
-    "section": "Setting up git and GitHub for a project",
-    "text": "Setting up git and GitHub for a project\ngit init\ngit add",
-    "crumbs": [
-      "Publishing"
-    ]
-  },
-  {
-    "objectID": "authoring.html",
-    "href": "authoring.html",
-    "title": "Authoring",
-    "section": "",
-    "text": "This page builds off of the Authoring tutorial on the Quarto website.",
-    "crumbs": [
-      "Authoring"
-    ]
-  },
-  {
-    "objectID": "authoring.html#combining-dynamic-and-static-content",
-    "href": "authoring.html#combining-dynamic-and-static-content",
-    "title": "Authoring",
-    "section": "Combining dynamic and static content",
-    "text": "Combining dynamic and static content\nHow do you handle multiple formats when your resource includes dynamic content, such as HTMLWidgets, interactives, or live code blocks? Quarto has an advanced feature called Conditional Content that allows you to specify which content to include based on the output type. For example, dynamic content will only show in the HTML output, while the static output formats like PDF and Microsoft Word can either not include the dynamic content or have different content.",
-    "crumbs": [
-      "Authoring"
-    ]
-  },
-  {
-    "objectID": "quarto_live.html",
-    "href": "quarto_live.html",
-    "title": "Quarto Live",
-    "section": "",
-    "text": "Quarto Live Documentation",
-    "crumbs": [
-      "Interactive Documents",
-      "Quarto Live"
-    ]
-  },
-  {
-    "objectID": "quarto_live.html#packages",
-    "href": "quarto_live.html#packages",
-    "title": "Quarto Live",
-    "section": "Packages",
-    "text": "Packages\nFor example, to load packages, you can include the following in the YAML header:\n\nRPython\n\n\n---\nformat: live-html\nwebr:\n  packages:\n    - ggplot2\n    - dplyr\n---\n\n\n---\nformat: live-html\npyodide:\n  packages:\n    - matplotlib\n    - numpy\n    - seaborn\n---\n\n\n\nCheck out the Loading Packages Documentation for more information, including how to load from custom repositories.\n\n\n\n\n\n\nWarningUsing both R and WebR code blocks\n\n\n\nIf you are combining R code blocks with WebR code blocks (or Python with pyodide), you will need to load packages in both places, as they run in separate environments. The R code blocks will not have access to packages loaded in WebR code blocks, and vice versa (similar for Python).\n\n\n\n\n\n\n\n\nWarningPackage availability in WebR\n\n\n\nMake sure to check if an existing package is available in WebR before trying to load it, as not all R packages are currently supported. You can check the list of available packages. If this link takes too long to load, you can also use this searchable repository created by Bob Rudis.",
-    "crumbs": [
-      "Interactive Documents",
-      "Quarto Live"
-    ]
-  },
-  {
-    "objectID": "quarto_live.html#files-and-data",
-    "href": "quarto_live.html#files-and-data",
-    "title": "Quarto Live",
-    "section": "Files and data",
-    "text": "Files and data\nFrom Quarto’s website:\n\nNormally webr and pyodide code blocks are executed in the reader’s web browser, and so resources local to your own machine are not available for use inside the WebAssembly environment. Instead, there is a Virtual Filesystem (VFS) made available that contains only the minimum required to run R or Python code.\n\nTo make additional resources available, you can use the resources option in the YAML header to specify files to be loaded into the VFS. This can include data files, images, or any other resources that your code blocks need to access. For example, if you have a data directory in your Quarto project with multiple datasets, you can include the following in the YAML header to make the entire directory available in the VFS:\n---\nformat: live-html\nresources:\n  - data\n---\nThen, you can access the files in the data directory from your code blocks using the path data/filename. For example, if you have a file called mydata.csv in the data directory, you can read it into a WebR code block like this:\n\nRPython\n\n\n```{webr}\nmydata &lt;- read.csv(\"data/mydata.csv\")\n```\n\n\n```{pyodide}\nimport pandas as pd\nmydata = pd.read_csv(\"data/mydata.csv\")\n```\n\n\n\nYou can find more information about this feature in the Loading Resources Documentation\n\n\n\n\n\n\nWarningUsing both R and WebR code blocks\n\n\n\nJust like with loading packages, if you are combining R code blocks with WebR code blocks, you will need to load data in both places, as they run in separate environments. The R code blocks will not have access to data loaded in WebR code blocks, and vice versa.",
-    "crumbs": [
-      "Interactive Documents",
-      "Quarto Live"
-    ]
-  },
-  {
-    "objectID": "quarto_live.html#shared-environments-across-code-blocks",
-    "href": "quarto_live.html#shared-environments-across-code-blocks",
-    "title": "Quarto Live",
-    "section": "Shared environments across code blocks",
-    "text": "Shared environments across code blocks\nSee the Managing environments documentation.",
-    "crumbs": [
-      "Interactive Documents",
-      "Quarto Live"
-    ]
-  },
-  {
-    "objectID": "quarto_live.html#prettifying-interactive-exercises",
-    "href": "quarto_live.html#prettifying-interactive-exercises",
-    "title": "Quarto Live",
-    "section": "Prettifying interactive exercises",
-    "text": "Prettifying interactive exercises\n\n\n\n\n\n\nTipDefault aesthetics\n\n\n\nPlot a rectangle using geom_tile centered at (x,y) = (4, 7). Do not specify any other aesthetics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteHint 1\n\n\n\n\n\n1ggplot() +\n  geom_tile(___)\n\n1\n\nAdd the geom_tile geom and specify the aesthetics by using the aes() function and assigning it to the mapping argument of geom_tile.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteHint 2\n\n\n\n\n\n1ggplot() +\n2  geom_tile(mapping = aes(___))\n\n1\n\nAdd the geom_tile geom and specify the aesthetics by using the aes() function and assigning it to the mapping argument of geom_tile.\n\n2\n\nSpecify the x and y aesthetics as arguments to the aes() function, assigning them their appropriate values.\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\n\nggplot() + #&lt;1&gt;\n  geom_tile(mapping = aes(x = 4, y = 7)) #&lt;2&gt;\n1ggplot() +\n2  geom_tile(mapping = aes(x = 4, y = 7))\n\n\n\n1\n\nAdd the geom_tile geom and specify the aesthetics by using the aes() function and assigning it to the mapping argument of geom_tile.\n\n2\n\nSpecify the x and y aesthetics as arguments to the aes() function, assigning them their appropriate values.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown\n\n::: {.callout-tip title=\"Default aesthetics\"}\n*Plot a rectangle using* `geom_tile` *centered at (x,y) = (4, 7). Do not specify any other aesthetics.*\n\n\n```{webr}\n#| exercise: one-tile-ex-1\n#| autorun: FALSE\n\n```\n\n::: { .hint exercise=\"one-tile-ex-1\"}\n::: { .callout-note collapse=\"false\"}\n## Hint 1\n\n```{r}\nggplot() +       #&lt;1&gt;\n  geom_tile(___) #&lt;2&gt;\n```\n1. Add the `geom_tile` geom and specify the aesthetics by using the `aes()` function and assigning it to the `mapping` argument of `geom_tile`.\n\n:::\n:::\n\n::: { .hint exercise=\"one-tile-ex-1\"}\n::: { .callout-note collapse=\"false\"}\n## Hint 2\n\n```{r}\nggplot() + #&lt;1&gt;\n  geom_tile(mapping = aes(___)) #&lt;2&gt;\n```\n1. Add the `geom_tile` geom and specify the aesthetics by using the `aes()` function and assigning it to the `mapping` argument of `geom_tile`.\n2. Specify the x and y aesthetics as arguments to the `aes()` function, assigning them their appropriate values.\n:::\n:::\n\n::: { .solution exercise=\"one-tile-ex-1\"}\n::: { .callout-tip collapse=\"false\"}\n\n## Solution\n\n```{webr}\n#| exercise: one-tile-ex-1\n#| solution: TRUE\nggplot() + #&lt;1&gt;\n  geom_tile(mapping = aes(x = 4, y = 7)) #&lt;2&gt;\n```\n1. Add the `geom_tile` geom and specify the aesthetics by using the `aes()` function and assigning it to the `mapping` argument of `geom_tile`.\n2. Specify the x and y aesthetics as arguments to the `aes()` function, assigning them their appropriate values.\n\n```{webr}\n#| exercise: one-tile-ex-1\n#| check: TRUE\ngradethis::grade_this_code()\n```\n\n:::\n:::\n:::",
-    "crumbs": [
-      "Interactive Documents",
-      "Quarto Live"
+      "Code and Extensions",
+      "Authoring with Code"
     ]
   },
   {
@@ -247,39 +112,534 @@
     "href": "slides/gateways-2026-tutorial/index.html#the-anatomy-of-an-open-resource",
     "title": "Gateways 2026 Tutorial",
     "section": "The Anatomy of an “Open” Resource",
-    "text": "The Anatomy of an “Open” Resource"
+    "text": "The Anatomy of an “Open” Resource\nThree rows\n\nResource Type (Book, Lab, Lecture, Assignment, …)\nResource Format (PDF, DOCX, HTML, …)\nAuthoring (+Publishing) Platforms (LearnGala, OERCommons (Open Author), Pressbooks, Manifold, Quarto, PreTeXt/Plus, …)"
   },
   {
-    "objectID": "authoring_code.html",
-    "href": "authoring_code.html",
-    "title": "Authoring with Code",
+    "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-quarto",
+    "href": "slides/gateways-2026-tutorial/index.html#introduction-to-quarto",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Introduction to Quarto",
+    "text": "Introduction to Quarto\n\nThe next evolution of R Markdown\nA publishing system for R, Python, and more\nCreates notebooks, dashboards, books, reports, presentations\n\n\n\nQuarto is a next-generation, open-source publishing system. It has expanded upon R Markdown to add new languages and can add more in the future. R Markdown has a lot of packages doing lots of different things, but Quarto has a shared expression for core features. Create dynamic content with Python, R, Julia, and Observable. Enable “single-source publishing” — create Word, PDFs, HTML, etc. from one source, you can make books, websites, presentations. There are many resources about Quarto, I gave a talk at R-Ladies St. Louis, and happy to link, but will only be sharing most critical aspects.\n\n\nquarto.org/"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#anatomy-of-a-quarto-document",
+    "href": "slides/gateways-2026-tutorial/index.html#anatomy-of-a-quarto-document",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\n\n---\ntitle: \"ggplot2 demo\"\nformat: \n  html:\n    code-fold: true\n---\n\n## Meet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see &lt;https://quarto.org&gt;.\n\n```{r}\n#| label: plot-penguins\n#| echo: false\n#| message: false\n#| warning: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nggplot(penguins, \n       aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(\n    title = \"Flipper and bill length\",\n    subtitle = \"Dimensions for penguins at Palmer Station LTER\",\n    x = \"Flipper length (mm)\", y = \"Bill length (mm)\",\n    color = \"Penguin species\", shape = \"Penguin species\"\n  ) +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-extensions",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-extensions",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\n\nFormatsJournal articlesRevealJS themes\n\n\n\n\n\n\n\nScrollytelling extension\n\n\n\n\n\n\n\nJournal of Statistical Software (JSS)\n\n\n\n\n\n\n\nnes-revealjs format by EmilHvitfeldt\n\n\n\n\nQuarto extensions let you customize and extend Quarto’s functionality beyond its built-in features. They enable: New Output Formats – Create custom templates for reports, presentations, or interactive documents, Custom Layouts & Themes – Design unique styling and layouts for HTML, PDF, or Word outputs. Custom Shortcodes & Filters – Modify how Quarto processes content, such as adding new syntax or automating formatting, which I will show in next page. Quarto has a Lua-based extension system, and you can make your own, too."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-extensions-1",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-extensions-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\nFor example, there’s a fontawesome extension.\nInstall the extension:\n\n\nTerminal\n\nquarto add quarto-ext/fontawesome\n\nAdd to your Quarto document YAML heading:\n\n\nexample.qmd\n\n---\ntitle: \"ggplot2 demo\"\nformat: \n  html:\n    code-fold: true\n    filters:\n      - fontawesome\n---"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-extensions-2",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-extensions-2",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\nUse the extension in the doc:\n{{&lt; fa brands github &gt;}}\nResults in:"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-extensions-3",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-extensions-3",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\nQuarto extension gallery by Mickaël Canouil\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-examples",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-examples",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Quarto examples",
+    "text": "Quarto examples\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#hands-on-activity",
+    "href": "slides/gateways-2026-tutorial/index.html#hands-on-activity",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Hands-on activity",
+    "text": "Hands-on activity\nGetting Started with Quarto"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#section-2",
+    "href": "slides/gateways-2026-tutorial/index.html#section-2",
+    "title": "Gateways 2026 Tutorial",
     "section": "",
-    "text": "RStudio has a built-in connection to GitHub’s Copilot. Go to Tools &gt; Global Options &gt; Code &gt; Copilot to enable it.\n\n\nDiagrams\nCreate a food web with fox, rabbits, and grass.\n\n\n\n\n\ngraph TD\n    Grass --&gt; Rabbits\n    Rabbits --&gt; Fox",
+    "text": "Enter the world of interactive R and Python in the browser. Running code directly in the browser opens the door for many new and exciting uses for data science on the web."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#section-3",
+    "href": "slides/gateways-2026-tutorial/index.html#section-3",
+    "title": "Gateways 2026 Tutorial",
+    "section": "",
+    "text": "This is thanks to the amazing technology brought to you by webR and Pyodide. But first, let’s talk about WebAssembly."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#what-is-webassembly",
+    "href": "slides/gateways-2026-tutorial/index.html#what-is-webassembly",
+    "title": "Gateways 2026 Tutorial",
+    "section": "What is WebAssembly?",
+    "text": "What is WebAssembly?\nWebAssemby is a low-level, high-performance binary instruction format that allows code to run in web browsers.\n\nWebAssemby, or Wasm, is a low-level, high-performance binary instruction format that allows compiled languages like C and C++ to run in web browsers at near-native speeds. C and C++ code is compiled by something called Emscripten. Emscripten takes the C/C++ code as input, produces Wasm as a result. Once it’s in Wasm, you can run it in any browser that supports Wasm, which in modern browsers, is most of them."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#section-4",
+    "href": "slides/gateways-2026-tutorial/index.html#section-4",
+    "title": "Gateways 2026 Tutorial",
+    "section": "",
+    "text": "Python has had a browser solution for a while. Pyodide compiles the Python interpreter CPython to WebAssembly using Emscripten, making it possible to run Python in the browser."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#section-5",
+    "href": "slides/gateways-2026-tutorial/index.html#section-5",
+    "title": "Gateways 2026 Tutorial",
+    "section": "",
+    "text": "Now, R has a similar solution with webR! WebR is the WebAssembly version of R that has been compiled to run in the browser. It’s an open-source project primarily driven by Posit, and thanks to the amazing work of many folks but especially George Stagg and Lionel Henry, it is possible to run R code directly in a web browser without the need for traditional servers to execute the code. A user can visit a website and run R code directly without R installed on their device. All that is required is a web server such as GitHub Pages or Netlify."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console",
+    "href": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Interactive R console",
+    "text": "Example: Interactive R console\n\n\n\n\n\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.\n\n\nhttps://webr.r-wasm.org/latest/"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console-1",
+    "href": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Interactive R console",
+    "text": "Example: Interactive R console\n\n\n\n\n\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.\n\n\nhttps://webr.r-wasm.org/latest/"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#packages-with-webr",
+    "href": "slides/gateways-2026-tutorial/index.html#packages-with-webr",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Packages with webR",
+    "text": "Packages with webR\n\n\n\nrepo.r-wasm.org\n\n\nR Universe\n\n\nPyodide include a package manager that allows the use of over 1500 Python packages. It can also install Python wheels or load custom Python packages. There are over 14k R packages available for webR (not all have been tested). The way it works is that the R packages must be compiled for Wasm. By default, webr::install() will use the public repository hosted at https://repo.r-wasm.org/. R Universe is a project by rOpenSci that experiments with ideas for improving the publication and discover of research software in R. It builds Wasm binaries for R packages for use in webR applications. So for your custom R packages, the easiest wy to get up and running is to create a personal R-Universe repo for your packages. The system will automatically build R package binaries for different targets including WebAssembly, which can be used in webR or QuartoLive. There are other options, such as the rwasm package."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-webr",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-webr",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use webR",
+    "text": "How to use webR\n\n\n\n\n\n\n\nhttps://docs.r-wasm.org/webr/latest/"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-webr-1",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-webr-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use webR",
+    "text": "How to use webR\nInstall the package:\n\n\nTerminal\n\nnpm i webr\n\nImport the WebR class:\n\n\nJavaScript\n\nimport { WebR } from 'webr';\n\nconst webR = new WebR();\nawait webR.init();\n\n\nWhat if you don’t know JavaScript? 😅\n\nWebR aims to be as quick and easy to use as possible for those familiar with JavaScript web development, which raises the question… what if you don’t know Javascript?"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#section-6",
+    "href": "slides/gateways-2026-tutorial/index.html#section-6",
+    "title": "Gateways 2026 Tutorial",
+    "section": "",
+    "text": "Quarto Live allows you to embed WebAssembly-powered code blocks and exercises in Quarto documents through the quarto-live extension. There’s support for both R via webR and Python via Pyodide. Featuers include interactive code blocks, exercises with hints and solutions, and rich output like plots. And most importantly, web development skills are not needed to use webR in your content. I wanted to mention that originally, there was Jame Balamuta’s quarto-webr extension, but quarto-live is the version supported by Posit."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-quarto-live",
+    "href": "slides/gateways-2026-tutorial/index.html#introduction-to-quarto-live",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Introduction to Quarto Live",
+    "text": "Introduction to Quarto Live\nQuarto Live embeds WebAssembly powered code blocks and exercises for R and Python into Quarto documents with HTML-based output formats.\n\n\n\n\n\n\n\n\n\nAfter a short loading period, a Run code button will appear. R and Python code can be edited and executed in an editor like this one. Let’s run and edit this code as an example."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-install-quarto-live",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-install-quarto-live",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to install Quarto Live",
+    "text": "How to install Quarto Live\nInstall the extension:\n\n\nTerminal\n\nquarto add r-wasm/quarto-live\n\nAdd to your Quarto document YAML header:\n\n\nexample.qmd\n\n---\nformat: html\n---"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-install-quarto-live-1",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-install-quarto-live-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to install Quarto Live",
+    "text": "How to install Quarto Live\nInstall the extension:\n\n\nTerminal\n\nquarto add r-wasm/quarto-live\n\nAdd to your Quarto document YAML header:\n\n\nexample.qmd\n\n---\nformat: live-html\nengine: knitr\n---\n\n{{&lt; include ./_extensions/r-wasm/live/_knitr.qmd &gt;}}"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Quarto Live",
+    "text": "How to use Quarto Live\n\nPlace code in a webr code chunk for R\nPlace code in a pyodide code chunk for Python\n\n\n\nexample.qmd\n\n```{webr}\nfor (x in 1:5) {\n  print(x ** 2)\n}\n```"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live-1",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Quarto Live",
+    "text": "How to use Quarto Live\nCan be used in presentations too:\n\nEdit your YAML header to live-revealjs:\n\n\n\nexample.qmd\n\n---\nformat: live-revealjs\n---\n\n\nUse the quarto-drop extension to drop an R or Python console into your slides"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live-2",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live-2",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Quarto Live",
+    "text": "How to use Quarto Live\nOptions include:\n\nCreating read-only cells\nAutorun\nAutocomplete\nand more!"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#installing-packages",
+    "href": "slides/gateways-2026-tutorial/index.html#installing-packages",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Installing packages",
+    "text": "Installing packages\nAs the document loads\n\n\nexample.qmd\n\n---\nformat: live-html\nwebr:\n  packages:\n    - dplyr\n    - palmerpenguins\n    - ggplot2\n---"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#installing-packages-1",
+    "href": "slides/gateways-2026-tutorial/index.html#installing-packages-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Installing packages",
+    "text": "Installing packages\nInteractively\n\n\nexample.qmd\n\n```{webr}\ninstall.packages(\"dplyr\", quiet = TRUE)\n```"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#displaying-plots",
+    "href": "slides/gateways-2026-tutorial/index.html#displaying-plots",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Displaying plots",
+    "text": "Displaying plots\n\n\n\n\n\n\n\n\n\nAs mentioned earlier, you can also do plots with webR. Graphics work a bit different than normal. It has something called a graphics device that implements primitive drawing commands from R in the browser. It takes advantage of features in a browers when plotting R, things like fonts from other languages or emojis."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#creating-exercises",
+    "href": "slides/gateways-2026-tutorial/index.html#creating-exercises",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Creating exercises",
+    "text": "Creating exercises\nDesignating a webr chunk as an exercise (with optional setup code, hints, solutions, and grading).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\nConsider subtracting 1, 2, and 3 from 10.\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe answer is 4 ☺️"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-claus-wilke-introduction-to-r",
+    "href": "slides/gateways-2026-tutorial/index.html#example-claus-wilke-introduction-to-r",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Claus Wilke Introduction to R",
+    "text": "Example: Claus Wilke Introduction to R\n\n\n\n\n\n\n\nhttps://wilkelab.org/SDS366/worksheets/intro-to-R.html"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-six-not-so-basic-base-r-functions",
+    "href": "slides/gateways-2026-tutorial/index.html#example-six-not-so-basic-base-r-functions",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Six not-so-basic base R functions",
+    "text": "Example: Six not-so-basic base R functions\n\n\n\n\n\n\n\nhttps://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#webr-love",
+    "href": "slides/gateways-2026-tutorial/index.html#webr-love",
+    "title": "Gateways 2026 Tutorial",
+    "section": "webR love 💜",
+    "text": "webR love 💜"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#hands-on-activity-1",
+    "href": "slides/gateways-2026-tutorial/index.html#hands-on-activity-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Hands-on activity",
+    "text": "Hands-on activity\nQuarto Live"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-shiny",
+    "href": "slides/gateways-2026-tutorial/index.html#introduction-to-shiny",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Introduction to Shiny",
+    "text": "Introduction to Shiny\nShiny allows you to create web apps, no web development skills required.\n\n\n\n\n\n\n\nshiny.posit.co"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#traditional-shiny-architecture",
+    "href": "slides/gateways-2026-tutorial/index.html#traditional-shiny-architecture",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Traditional Shiny architecture",
+    "text": "Traditional Shiny architecture\n\n\n\n\n\n\n\nThe traditional way of deploying Shiny involves in a separate server and client. A server is a machine, connected to the Internet, that runs 24/7, ready to run your Shiny app. The server runs Python and Shiny, and clients connect via the web browser. Each client keeps an open websocket connection as long as they are using the application. This is of course a simplification of the process, but fundamentally, it looks like this.\n\n\nSource"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps",
+    "href": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Hosting Shiny apps",
+    "text": "Hosting Shiny apps\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (enterprise)\nRoll your own\n\n\nCloud\n\nshinyapps.io\nPosit Connect Cloud\nHugging Face\nRoll your own\n\n\n\nThere are options for hosting Shiny apps, i.e., hosting their syervers, you could have RStudio Server on your laptop. But say you need scalability or additional security for your app, you could pay Posit money to have them host your servers for you with Posit Connect. There are also cloud-based solutions like shinyapps.io and Posit Connect. There’s a spectrum in terms of number of users, for some, it might just be a few people and for others, we’re talking thousands. There are also some in between, such as academics. Professors might have a few hundred folks looking at their apps, but they don’t have infrastructure or the resources to set it up."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps-1",
+    "href": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Hosting Shiny apps",
+    "text": "Hosting Shiny apps\nSome web services offer scalability, features, and cost:\n\nGitHub Pages\nNetlify\nQuarto Pub\n\n\nBut they can’t run traditional Shiny apps!\n\nThis is static web hosting. And it’s great in terms of reach and affordabilty. You don’t have to think about servers anymore, you just give them your app files. But, there’s no way to run Shiny apps or dynamic R or Python code. If you’ve worked with Shiny in the past, you’ve probably embedded Shiny apps in an iFrame when you wanted to share them on a website."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#section-8",
+    "href": "slides/gateways-2026-tutorial/index.html#section-8",
+    "title": "Gateways 2026 Tutorial",
+    "section": "",
+    "text": "With Shinylive, anybody can create their own serverless Shiny apps to run in the browser."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-shinylive",
+    "href": "slides/gateways-2026-tutorial/index.html#introduction-to-shinylive",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Introduction to Shinylive",
+    "text": "Introduction to Shinylive\n#| '!! shinylive warning !!': |\n#|   shinylive does not work in self-contained HTML documents.\n#|   Please set `embed-resources: false` in your metadata.\n#| standalone: true\n#| viewerHeight: 500\n\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_sidebar(\n  title = \"Simple Shiny App\",\n  theme = bs_theme(bootswatch = \"flatly\"),\n  \n  sidebar = sidebar(\n    numericInput(\"number\", \"Enter a number:\", value = 5, min = 1, max = 100),\n    selectInput(\"color\", \"Choose color:\", \n                choices = c(\"red\", \"blue\", \"green\", \"purple\"))\n  ),\n  \n  card(\n    card_header(\"Result\"),\n    card_body(\n      plotOutput(\"plot\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  output$plot &lt;- renderPlot({\n    plot(1:input$number, \n         col = input$color,\n         pch = 19,\n         cex = 2,\n         main = \"Simple Plot\",\n         xlab = \"Index\",\n         ylab = \"Value\")\n  })\n}\n\nshinyApp(ui, server)\n\nAnnounced in July 2022 for Python and September 2023 for R, Shinylive uses Pyodide and webR to enable fully in-browser Shiny apps without a backend. It offers an online editor, conversion of existing Shiny apps, and embedding Shiny apps in Quarto documents."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#shinylive-architecture",
+    "href": "slides/gateways-2026-tutorial/index.html#shinylive-architecture",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Shinylive architecture",
+    "text": "Shinylive architecture\n\n\n\n\n\n\n\nAll you need to run Shinylive is one of these static web servers. When an application is deployed with Shinylive, Python and Shiny run in the web browser: the browser is effectively both the client and server for the application. There is a web server that serves files, but it does not run Python or Shiny—it can be a “dumb” static web server.\n\n\nSource"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\n\nShinylive online editor\nConvert a Shiny app\nEmbed a Shiny app with Quarto"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-1",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nShinylive online editor\n\n\n\n\n\n\n\nThere’s an online Shinylive editor for R and Python. The editor is on the left, so you can change the app in real time. Build it live! It uses bslib which is next-generation Shiny creation and styling. It aims to look beautiful right out of the box. You can share apps via the share button, with a URL that you can sent to someone else.\n\n\nLink"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-2",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-2",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nConvert a Shiny app\nInstall the package:\ninstall.packages(\"shinylive\")\n\npip install shinylive\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-3",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-3",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nConvert a Shiny app\nExport the app:\nshinylive::export(\"myapp\", \"site\")\n\nshinylive export myapp site\n\n\nConverting the app takes an app in the my app directory and produces an output directory site and then you can load the files to a static web hosting service.\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-4",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-4",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nConvert a Shiny app\nStart a web server for the directory:\nhttpuv::runStaticServer(\"site\")\n\ncd site\npython -m http.server 8000\n\n\nIf you want to preview the app, you can run this and it’ll open it up in a web browser.\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-5",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-5",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInstall the Quarto extension:\n\n\nTerminal\n\nquarto add quarto-ext/shinylive\n\nAdd to your Quarto document YAML heading:\n\n\nexample.qmd\n\nfilters:\n  - shinylive\n\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-6",
+    "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-6",
+    "title": "Gateways 2026 Tutorial",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInsert a code block with {shinylive-python} or {shinylive-r}\n\n\nexample.qmd\n\n```{shinylive-python}\n#| standalone: true\n\n/* App code here */\n\n```"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-shiny-for-python-docs",
+    "href": "slides/gateways-2026-tutorial/index.html#example-shiny-for-python-docs",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Shiny for Python docs",
+    "text": "Example: Shiny for Python docs\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-claus-wilkes-color-picker-app",
+    "href": "slides/gateways-2026-tutorial/index.html#example-claus-wilkes-color-picker-app",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Claus Wilke’s Color Picker App",
+    "text": "Example: Claus Wilke’s Color Picker App\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-shiny-assistant",
+    "href": "slides/gateways-2026-tutorial/index.html#example-shiny-assistant",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Shiny Assistant",
+    "text": "Example: Shiny Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "quarto_live.html",
+    "href": "quarto_live.html",
+    "title": "Quarto Live",
+    "section": "",
+    "text": "Quarto Live Documentation",
     "crumbs": [
-      "Code and Extensions",
-      "Authoring with Code"
+      "Interactive Documents",
+      "Quarto Live"
     ]
   },
   {
-    "objectID": "authoring_code.html#use-copilot-to-create-a-mermaid-diagram",
-    "href": "authoring_code.html#use-copilot-to-create-a-mermaid-diagram",
-    "title": "Authoring with Code",
-    "section": "",
-    "text": "Diagrams\nCreate a food web with fox, rabbits, and grass.\n\n\n\n\n\ngraph TD\n    Grass --&gt; Rabbits\n    Rabbits --&gt; Fox",
+    "objectID": "quarto_live.html#code-persistence",
+    "href": "quarto_live.html#code-persistence",
+    "title": "Quarto Live",
+    "section": "Code persistence",
+    "text": "Code persistence\nOne useful feature of Quarto Live is that it allows you to persist code across sessions. This means that if you write some code in a code block and then refresh the page, the code will still be there. This is particularly useful for students that need to step a way from a module and continue work later.\nTo achieve this, Quarto Live uses the browser’s local storage to save the code in each code block. This means that the code is saved on the user’s device and will persist even if they close the browser or shut down their computer.\nPersistence can be set on a block-by-block basis by adding #| persist: true to a block’s YAML. It can also be activated for the entire document by including the following in the YAML header:\n---\nformat: \n  live-html:\n    webr:\n      cell-options:\n        persist: true\n---",
     "crumbs": [
-      "Code and Extensions",
-      "Authoring with Code"
+      "Interactive Documents",
+      "Quarto Live"
     ]
   },
   {
-    "objectID": "extensions.html",
-    "href": "extensions.html",
-    "title": "Useful Extensions",
-    "section": "",
-    "text": "HTML\n\nHTML\n\n\nName\nDescription\nExample\n\n\n\n\nbluesky-comments\nQuarto Shortcode Extension to Embed Comments from Bluesky and add Bluesky-powered comment sections for websites and HTML outputs\nLink\n\n\nelevator\nShortcode for using Elevator.js in HTML documents\nLink\n\n\nembedio\nVariety of shortcodes for including files and content in HTML documents\n\n\n\nlightbox\nCreate lightbox treatments for images in your HTML documents (see also the built-in functionality)\n\n\n\nmodal\nA Quarto extension providing a simple way to create Bootstrap modals in your HTML documents\n\n\n\nnutshell\nEmbed Nutshell expandable explanations in HTML documents\n\n\n\nremember\nAn extension for Quarto to save and restore navigation position across page visits for both HTML documents and Reveal.js presentations\n\n\n\nsocial-embeds\nEmbed content from across the web into HTML documents using a shortcode\n\n\n\nsocial-share\nAdd buttons to share articles on various social media platforms\n\n\n\n\n\n\nCoding\n\nCoding\n\n\nName\nDescription\n\n\n\n\ncode-appendix\nA lua filter to auto-generate an appendix from code chunks\n\n\noutput-styling\nStyle computational output, errors, warnings, and messages in HTML documents\n\n\npyodide\nEmbed Pyodide in HTML documents to enable interactive Python code cells without the need for a Python server\n\n\nquarto-live\nWebAssembly powered ‘live’ formats for Quarto HTML documents and Revealjs slides, adding interactive code blocks and exercises for R and Python\n\n\nqreacto\nRun standalone React components in your project\n\n\nregurgitate\nAutomatic Code Appendix containing all shown code with an option to include results or group by language\n\n\nshinylive\nThis extension lets you embed Shinylive applications in a Quarto document.\n\n\nwebr\nEmbed WebR in HTML documents to enable interactive R code cells without the need for an R server\n\n\n\n\n\nTeaching\n\nTeaching\n\n\nName\nDescription\n\n\n\n\nassign\nA Quarto Extension for educators writing assignments by combining instruction and solution authoring (Note: Some if this functionality is built-in to Quarto through Conditional Content)\n\n\nhoneypot\nAdd hidden instructions to HTML homework assignments to help detect cheating by unauthorized LLM usage\n\n\nquizdown\nAdd an interactive quiz into your HTML document\n\n\n\n\n\nGeneral Utility\n\nGeneral Utility\n\n\nName\nDescription\n\n\n\n\nlinkate\nAutomatically collect all URLs in a document and place them at the end under a “Links” section\n\n\nmolstar\nShortcode to embed proteins and trajectories with Mol*\n\n\nopen-social-comments\nEnables adding Bluesky or Mastodon/Fediverse powered comments to posts and articles\n\n\nunsplash\nShortcode to use Unsplash images within documents\n\n\n\n\n\nMath/LaTeX\n\nMath/LaTeX\n\n\nName\nDescription\n\n\n\n\nbibentry\nA Quarto extension that replicates LaTeX’s \\bibentry command functionality. It allows you to display full bibliography entries inline within your document text\n\n\ncallouty-theorem\nWraps theorems and proofs in callout blocks for better visual appeal\n\n\ncustom-amsthm-environments\nQuarto extension for defining custom amsthm environments\n\n\nimagify\nConvert embedded LaTeX to images and use .tex/.tikz files as image sources\n\n\nlatex-environment\nOutput divs as custom LaTeX environments\n\n\ntikz\nA filter that renders PGF/TikZ diagrams in HTML as SVG\n\n\ntypst-math\nChanges math block syntax from LaTeX to Typst math\n\n\n\n\nPresentations\n\nspeakernotes",
+    "objectID": "quarto_live.html#execution-time-limits",
+    "href": "quarto_live.html#execution-time-limits",
+    "title": "Quarto Live",
+    "section": "Execution time limits",
+    "text": "Execution time limits\nExecution time limits can be set for a code block. This can be useful to prevent infinite loops or long-running code from crashing the browser. To set an execution time limit, you can add #| timelimit: &lt;time in seconds&gt; to the code block’s YAML. For example, #| timelimit: 5 would set a time limit of 5 seconds for that code block. Set the time limit to 0 to disable it.",
     "crumbs": [
-      "Code and Extensions",
-      "Useful Extensions"
+      "Interactive Documents",
+      "Quarto Live"
+    ]
+  },
+  {
+    "objectID": "quarto_live.html#loading-packages-and-data",
+    "href": "quarto_live.html#loading-packages-and-data",
+    "title": "Quarto Live",
+    "section": "Loading packages and data",
+    "text": "Loading packages and data\nSince live HTML documents utilizing WebR run in the browser and not on a server, authors need to be explicit to Quarto Live about which packages and resources to load and make available to the user. This is done using the webr options in the YAML header.\n\nPackages\nFor example, to load packages, you can include the following in the YAML header:\n\nRPython\n\n\n---\nformat: live-html\nwebr:\n  packages:\n    - ggplot2\n    - dplyr\n---\n\n\n---\nformat: live-html\npyodide:\n  packages:\n    - matplotlib\n    - numpy\n    - seaborn\n---\n\n\n\nCheck out the Loading Packages Documentation for more information, including how to load from custom repositories.\n\n\n\n\n\n\nWarningUsing both R and WebR code blocks\n\n\n\nIf you are combining R code blocks with WebR code blocks (or Python with pyodide), you will need to load packages in both places, as they run in separate environments. The R code blocks will not have access to packages loaded in WebR code blocks, and vice versa (similar for Python).\n\n\n\n\n\n\n\n\nWarningPackage availability in WebR\n\n\n\nMake sure to check if an existing package is available in WebR before trying to load it, as not all R packages are currently supported. You can check the list of available packages. If this link takes too long to load, you can also use this searchable repository created by Bob Rudis.\n\n\n\n\nFiles and data\nFrom Quarto’s website:\n\nNormally webr and pyodide code blocks are executed in the reader’s web browser, and so resources local to your own machine are not available for use inside the WebAssembly environment. Instead, there is a Virtual Filesystem (VFS) made available that contains only the minimum required to run R or Python code.\n\nTo make additional resources available, you can use the resources option in the YAML header to specify files to be loaded into the VFS. This can include data files, images, or any other resources that your code blocks need to access. For example, if you have a data directory in your Quarto project with multiple datasets, you can include the following in the YAML header to make the entire directory available in the VFS:\n---\nformat: live-html\nresources:\n  - data\n---\nThen, you can access the files in the data directory from your code blocks using the path data/filename. For example, if you have a file called mydata.csv in the data directory, you can read it into a WebR code block like this:\n\nRPython\n\n\n```{webr}\nmydata &lt;- read.csv(\"data/mydata.csv\")\n```\n\n\n```{pyodide}\nimport pandas as pd\nmydata = pd.read_csv(\"data/mydata.csv\")\n```\n\n\n\nYou can find more information about this feature in the Loading Resources Documentation\n\n\n\n\n\n\nWarningUsing both R and WebR code blocks\n\n\n\nJust like with loading packages, if you are combining R code blocks with WebR code blocks, you will need to load data in both places, as they run in separate environments. The R code blocks will not have access to data loaded in WebR code blocks, and vice versa.",
+    "crumbs": [
+      "Interactive Documents",
+      "Quarto Live"
+    ]
+  },
+  {
+    "objectID": "quarto_live.html#grading-with-gradethis",
+    "href": "quarto_live.html#grading-with-gradethis",
+    "title": "Quarto Live",
+    "section": "Grading with {gradethis}",
+    "text": "Grading with {gradethis}\nGrading with gradethis\n\nShared environments across code blocks\nSee the Managing environments documentation.\n\n\nPrettifying interactive exercises\n\n\n\n\n\n\nTipDefault aesthetics\n\n\n\nPlot a rectangle using geom_tile centered at (x,y) = (4, 7). Do not specify any other aesthetics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteHint 1\n\n\n\n\n\n1ggplot() +\n  geom_tile(___)\n\n1\n\nAdd the geom_tile geom and specify the aesthetics by using the aes() function and assigning it to the mapping argument of geom_tile.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteHint 2\n\n\n\n\n\n1ggplot() +\n2  geom_tile(mapping = aes(___))\n\n1\n\nAdd the geom_tile geom and specify the aesthetics by using the aes() function and assigning it to the mapping argument of geom_tile.\n\n2\n\nSpecify the x and y aesthetics as arguments to the aes() function, assigning them their appropriate values.\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\n\nggplot() + #&lt;1&gt;\n  geom_tile(mapping = aes(x = 4, y = 7)) #&lt;2&gt;\n1ggplot() +\n2  geom_tile(mapping = aes(x = 4, y = 7))\n\n\n\n1\n\nAdd the geom_tile geom and specify the aesthetics by using the aes() function and assigning it to the mapping argument of geom_tile.\n\n2\n\nSpecify the x and y aesthetics as arguments to the aes() function, assigning them their appropriate values.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown\n\n::: {.callout-tip title=\"Default aesthetics\"}\n*Plot a rectangle using* `geom_tile` *centered at (x,y) = (4, 7). Do not specify any other aesthetics.*\n\n\n```{webr}\n#| exercise: one-tile-ex-1\n#| autorun: FALSE\n\n```\n\n::: { .hint exercise=\"one-tile-ex-1\"}\n::: { .callout-note collapse=\"false\"}\n## Hint 1\n\n```{r}\nggplot() +       #&lt;1&gt;\n  geom_tile(___) #&lt;2&gt;\n```\n1. Add the `geom_tile` geom and specify the aesthetics by using the `aes()` function and assigning it to the `mapping` argument of `geom_tile`.\n\n:::\n:::\n\n::: { .hint exercise=\"one-tile-ex-1\"}\n::: { .callout-note collapse=\"false\"}\n## Hint 2\n\n```{r}\nggplot() + #&lt;1&gt;\n  geom_tile(mapping = aes(___)) #&lt;2&gt;\n```\n1. Add the `geom_tile` geom and specify the aesthetics by using the `aes()` function and assigning it to the `mapping` argument of `geom_tile`.\n2. Specify the x and y aesthetics as arguments to the `aes()` function, assigning them their appropriate values.\n:::\n:::\n\n::: { .solution exercise=\"one-tile-ex-1\"}\n::: { .callout-tip collapse=\"false\"}\n\n## Solution\n\n```{webr}\n#| exercise: one-tile-ex-1\n#| solution: TRUE\nggplot() + #&lt;1&gt;\n  geom_tile(mapping = aes(x = 4, y = 7)) #&lt;2&gt;\n```\n1. Add the `geom_tile` geom and specify the aesthetics by using the `aes()` function and assigning it to the `mapping` argument of `geom_tile`.\n2. Specify the x and y aesthetics as arguments to the `aes()` function, assigning them their appropriate values.\n\n```{webr}\n#| exercise: one-tile-ex-1\n#| check: TRUE\ngradethis::grade_this_code()\n```\n\n:::\n:::\n:::",
+    "crumbs": [
+      "Interactive Documents",
+      "Quarto Live"
+    ]
+  },
+  {
+    "objectID": "authoring.html",
+    "href": "authoring.html",
+    "title": "Authoring",
+    "section": "",
+    "text": "This page builds off of the Authoring tutorial on the Quarto website.",
+    "crumbs": [
+      "Authoring"
+    ]
+  },
+  {
+    "objectID": "authoring.html#combining-dynamic-and-static-content",
+    "href": "authoring.html#combining-dynamic-and-static-content",
+    "title": "Authoring",
+    "section": "Combining dynamic and static content",
+    "text": "Combining dynamic and static content\nHow do you handle multiple formats when your resource includes dynamic content, such as HTMLWidgets, interactives, or live code blocks? Quarto has an advanced feature called Conditional Content that allows you to specify which content to include based on the output type. For example, dynamic content will only show in the HTML output, while the static output formats like PDF and Microsoft Word can either not include the dynamic content or have different content.",
+    "crumbs": [
+      "Authoring"
+    ]
+  },
+  {
+    "objectID": "publishing.html",
+    "href": "publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "See the Publishing Basics page on the Quarto website for detailed information on publishing. We will discuss some general concepts here for Posit Connect Cloud and GitHub Pages.",
+    "crumbs": [
+      "Publishing"
+    ]
+  },
+  {
+    "objectID": "publishing.html#how-to-publish",
+    "href": "publishing.html#how-to-publish",
+    "title": "Publishing",
+    "section": "How to publish",
+    "text": "How to publish\nIn the Terminal, navigate to the directory where your Quarto document is located and run the following command:\nquarto publish posit-connect-cloud",
+    "crumbs": [
+      "Publishing"
+    ]
+  },
+  {
+    "objectID": "publishing.html#setting-up-git-and-github-for-a-project",
+    "href": "publishing.html#setting-up-git-and-github-for-a-project",
+    "title": "Publishing",
+    "section": "Setting up git and GitHub for a project",
+    "text": "Setting up git and GitHub for a project\ngit init\ngit add",
+    "crumbs": [
+      "Publishing"
+    ]
+  },
+  {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Gateways 2026 Tutorial\nThis tutorial was given on September 8, 2026, prior to the Gateways 2026 conference.\n    View slides in full screen",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Open Educational Resources with Quarto",
+    "section": "",
+    "text": "Welcome",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "interactives.html",
+    "href": "interactives.html",
+    "title": "Interactives",
+    "section": "",
+    "text": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine. It is designed to be a portable target for the compilation of high-level languages like C, C++, and Rust, enabling them to run on the web at near-native speed.",
+    "crumbs": [
+      "Interactive Documents",
+      "Interactives"
+    ]
+  },
+  {
+    "objectID": "interactives.html#pyodide-for-python",
+    "href": "interactives.html#pyodide-for-python",
+    "title": "Interactives",
+    "section": "Pyodide for Python",
+    "text": "Pyodide for Python\nPyodide is a project that brings the Python runtime to the browser using WebAssembly. It allows you to run Python code in the browser, making it possible to create interactive Python applications without needing a server.",
+    "crumbs": [
+      "Interactive Documents",
+      "Interactives"
+    ]
+  },
+  {
+    "objectID": "interactives.html#webr-for-r",
+    "href": "interactives.html#webr-for-r",
+    "title": "Interactives",
+    "section": "WebR for R",
+    "text": "WebR for R\nWebR is a similar project that brings the R programming language to the browser using WebAssembly. It allows you to run R code in the browser, enabling interactive R applications without the need for a server.",
+    "crumbs": [
+      "Interactive Documents",
+      "Interactives"
+    ]
+  },
+  {
+    "objectID": "start.html",
+    "href": "start.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "The quickest way to start with Quarto is to work in Posit Cloud.\n\nCreate a FREE Posit Cloud account (Sign up)\nOpen the following Posit Cloud project called “Quarto Tutorial”\nWork through the three tutorials:\n\nTutorial: Hello, Quarto\nTutorial: Computations\nTutorial: Authoring\n\n\n\n\n\n\n\n\nNote\n\n\n\nOpen the “Get Started” folder in the “Quarto Tutorial” project to find the Quarto files associated with the three tutorials above. The completed versions of the files are located in the “Completed” subfolder.\n\n\nIf you would like to install Quarto on your computer, visit the Get Started page.",
+    "crumbs": [
+      "Getting Started"
     ]
   }
 ]

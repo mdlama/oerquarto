@@ -1,1 +1,1 @@
-Sitemap: https://mdlama.github.io/quartofmn/sitemap.xml
+Sitemap: https://mdlama.github.io/oerquarto/sitemap.xml

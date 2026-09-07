@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Live – Quarto Faculty Mentoring Network</title>
+<title>Quarto Live – Open Educational Resources with Quarto</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -79,10 +79,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-f0d59bf19973bb4724dd25797faa83f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-a0666f337939ae1e4b4bafc9d6a9399a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f0d59bf19973bb4724dd25797faa83f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -130,7 +132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -272,9 +274,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         changeGiscusTheme();
       }
     };
-    const authorPrefersDark = true;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
     // Dark / light mode switch
     window.quartoToggleColorScheme = () => {
@@ -285,14 +288,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -323,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Quarto Faculty Mentoring Network</a> 
+      <a href="./">Open Educational Resources with Quarto</a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
@@ -345,6 +340,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -434,7 +435,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation">Installation</a></li>
-  <li><a href="#interactive-code-blocks" id="toc-interactive-code-blocks" class="nav-link" data-scroll-target="#interactive-code-blocks">Interactive code blocks</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#helpful-tidbits" id="toc-helpful-tidbits" class="nav-link" data-scroll-target="#helpful-tidbits">Helpful Tidbits</a>
+  <ul class="collapse">
   <li><a href="#code-persistence" id="toc-code-persistence" class="nav-link" data-scroll-target="#code-persistence">Code persistence</a></li>
   <li><a href="#execution-time-limits" id="toc-execution-time-limits" class="nav-link" data-scroll-target="#execution-time-limits">Execution time limits</a></li>
   <li><a href="#loading-packages-and-data" id="toc-loading-packages-and-data" class="nav-link" data-scroll-target="#loading-packages-and-data">Loading packages and data</a>
@@ -446,6 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#shared-environments-across-code-blocks" id="toc-shared-environments-across-code-blocks" class="nav-link" data-scroll-target="#shared-environments-across-code-blocks">Shared environments across code blocks</a></li>
   <li><a href="#prettifying-interactive-exercises" id="toc-prettifying-interactive-exercises" class="nav-link" data-scroll-target="#prettifying-interactive-exercises">Prettifying interactive exercises</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -497,12 +501,14 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlLCJvdXRwdXQiOmZhbHNlfSwiY29kZSI6Indl
 <p>Once there, you can install the quarto-live package using the following command:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> add r-wasm/quarto-live</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="interactive-code-blocks" class="level1">
-<h1>Interactive code blocks</h1>
-<p><a href="https://r-wasm.github.io/quarto-live/getting_started/editor.html">Interactive Code Blocks Documentation</a></p>
+<section id="getting-started" class="level1">
+<h1>Getting started</h1>
+<p><a href="https://r-wasm.github.io/quarto-live/getting_started/">Getting Started Documentation</a></p>
 </section>
-<section id="code-persistence" class="level1">
-<h1>Code persistence</h1>
+<section id="helpful-tidbits" class="level1">
+<h1>Helpful Tidbits</h1>
+<section id="code-persistence" class="level2">
+<h2 class="anchored" data-anchor-id="code-persistence">Code persistence</h2>
 <p>One useful feature of Quarto Live is that it allows you to persist code across sessions. This means that if you write some code in a code block and then refresh the page, the code will still be there. This is particularly useful for students that need to step a way from a module and continue work later.</p>
 <p>To achieve this, Quarto Live uses the browser’s local storage to save the code in each code block. This means that the code is saved on the user’s device and will persist even if they close the browser or shut down their computer.</p>
 <p>Persistence can be set on a <a href="https://r-wasm.github.io/quarto-live/getting_started/editor.html#storing-and-recalling-code">block-by-block basis</a> by adding <code>#| persist: true</code> to a block’s YAML. It can also be activated for the entire document by including the following in the <a href="https://r-wasm.github.io/quarto-live/reference/document-yaml.html">YAML header</a>:</p>
@@ -514,15 +520,15 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlLCJvdXRwdXQiOmZhbHNlfSwiY29kZSI6Indl
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">persist</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="execution-time-limits" class="level1">
-<h1>Execution time limits</h1>
+<section id="execution-time-limits" class="level2">
+<h2 class="anchored" data-anchor-id="execution-time-limits">Execution time limits</h2>
 <p><a href="https://r-wasm.github.io/quarto-live/getting_started/editor.html#execution-time-limit">Execution time limits</a> can be set for a code block. This can be useful to prevent infinite loops or long-running code from crashing the browser. To set an execution time limit, you can add <code>#| timelimit: &lt;time in seconds&gt;</code> to the code block’s YAML. For example, <code>#| timelimit: 5</code> would set a time limit of 5 seconds for that code block. Set the time limit to <code>0</code> to disable it.</p>
 </section>
-<section id="loading-packages-and-data" class="level1">
-<h1>Loading packages and data</h1>
+<section id="loading-packages-and-data" class="level2">
+<h2 class="anchored" data-anchor-id="loading-packages-and-data">Loading packages and data</h2>
 <p>Since live HTML documents utilizing WebR run in the browser and not on a server, authors need to be explicit to Quarto Live about which packages and resources to load and make available to the user. This is done using the <code>webr</code> options in the YAML header.</p>
-<section id="packages" class="level2">
-<h2 class="anchored" data-anchor-id="packages">Packages</h2>
+<section id="packages" class="level3">
+<h3 class="anchored" data-anchor-id="packages">Packages</h3>
 <p>For example, to load packages, you can include the following in the YAML header:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Python</a></li></ul>
@@ -576,8 +582,8 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlLCJvdXRwdXQiOmZhbHNlfSwiY29kZSI6Indl
 </div>
 </div>
 </section>
-<section id="files-and-data" class="level2">
-<h2 class="anchored" data-anchor-id="files-and-data">Files and data</h2>
+<section id="files-and-data" class="level3">
+<h3 class="anchored" data-anchor-id="files-and-data">Files and data</h3>
 <p>From Quarto’s website:</p>
 <blockquote class="blockquote">
 <p>Normally webr and pyodide code blocks are executed in the reader’s web browser, and so resources local to your own machine are not available for use inside the WebAssembly environment. Instead, there is a Virtual Filesystem (VFS) made available that contains only the minimum required to run R or Python code.</p>
@@ -621,15 +627,15 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlLCJvdXRwdXQiOmZhbHNlfSwiY29kZSI6Indl
 </div>
 </section>
 </section>
-<section id="grading-with-gradethis" class="level1">
-<h1>Grading with {gradethis}</h1>
+<section id="grading-with-gradethis" class="level2">
+<h2 class="anchored" data-anchor-id="grading-with-gradethis">Grading with {gradethis}</h2>
 <p><a href="https://r-wasm.github.io/quarto-live/exercises/gradethis.html">Grading with gradethis</a></p>
-<section id="shared-environments-across-code-blocks" class="level2">
-<h2 class="anchored" data-anchor-id="shared-environments-across-code-blocks">Shared environments across code blocks</h2>
+<section id="shared-environments-across-code-blocks" class="level3">
+<h3 class="anchored" data-anchor-id="shared-environments-across-code-blocks">Shared environments across code blocks</h3>
 <p>See the <a href="https://r-wasm.github.io/quarto-live/exercises/environments.html">Managing environments</a> documentation.</p>
 </section>
-<section id="prettifying-interactive-exercises" class="level2">
-<h2 class="anchored" data-anchor-id="prettifying-interactive-exercises">Prettifying interactive exercises</h2>
+<section id="prettifying-interactive-exercises" class="level3">
+<h3 class="anchored" data-anchor-id="prettifying-interactive-exercises">Prettifying interactive exercises</h3>
 <div class="callout callout-style-default callout-tip callout-titled" title="Default aesthetics">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -834,6 +840,7 @@ W10=
 </script>
 </section>
 </section>
+</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
@@ -933,7 +940,7 @@ window._ojs.runtime.interpretFromScriptTags();
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mdlama\.github\.io\/quartofmn\/");
+        var filterRegex = new RegExp("https:\/\/mdlama\.github\.io\/oerquarto\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1260,8 +1267,8 @@ window._ojs.runtime.interpretFromScriptTags();
     }
   });
   </script>
-<input type="hidden" id="giscus-base-theme" value="dark">
-<input type="hidden" id="giscus-alt-theme" value="light">
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 <script>
   function loadGiscus() {
     // Function to get the theme based on body class
@@ -1279,7 +1286,7 @@ window._ojs.runtime.interpretFromScriptTags();
     script.dataset.repo = "mdlama/quartofmn";
     script.dataset.repoId = "R_kgDORgEd_g";
     script.dataset.category = "General";
-    script.dataset.categoryId = "DIC_kwDORgEd_s4C4vjc";
+    script.dataset.categoryId = "";
     script.dataset.mapping = "title";
     script.dataset.reactionsEnabled = "1";
     script.dataset.emitMetadata = "0";
