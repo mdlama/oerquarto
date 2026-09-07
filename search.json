@@ -48,18 +48,7 @@
     "href": "authoring_code.html",
     "title": "Authoring with Code",
     "section": "",
-    "text": "RStudio has a built-in connection to GitHub’s Copilot. Go to Tools &gt; Global Options &gt; Code &gt; Copilot to enable it.\n\n\nDiagrams\nCreate a food web with fox, rabbits, and grass.\n\n\n\n\n\ngraph TD\n    fox --&gt; rabbit\n    rabbit --&gt; grass",
-    "crumbs": [
-      "Code and Extensions",
-      "Authoring with Code"
-    ]
-  },
-  {
-    "objectID": "authoring_code.html#use-copilot-to-create-a-mermaid-diagram",
-    "href": "authoring_code.html#use-copilot-to-create-a-mermaid-diagram",
-    "title": "Authoring with Code",
-    "section": "",
-    "text": "Diagrams\nCreate a food web with fox, rabbits, and grass.\n\n\n\n\n\ngraph TD\n    fox --&gt; rabbit\n    rabbit --&gt; grass",
+    "text": "GitHub Copilot\nRStudio has a built-in connection to GitHub’s Copilot. Go to Tools &gt; Global Options &gt; Code &gt; Copilot to enable it.\n\n\nData Frames\nA great way to display data frames is by using df-print: paged in the YAML.\n---\ntitle: \"Document\"\nformat: \n   html:\n     df-print: paged\n---\nFor more details, see the Quarto documentation.\nHere’s an example with the Palmer Penguins dataset:\n\nlibrary(palmerpenguins)\npenguins\n\n\n  \n\n\n\nFor more advanced tables, including search and filtering, see the DT (DataTables) package. Here’s an example using the datatable() function from the DT package to create an interactive table with filtering options:\n\nlibrary(DT)\ndatatable(penguins,\n          filter = 'top')\n\n\n\n\n\n\n\nCode output locations\nA very useful feature of Quarto is the ability to control where code output appears. This can be used to create a variety of different layouts and formats. A particularly useful option is to place figures in the margin, which can be done using the column: margin option in the code chunk.\n\n```{r}\n#| label: fig-penguins\n#| fig-cap: \"Penguin bill length vs. body mass\"\n#| column: margin\n\nlibrary(ggplot2)\nggplot(penguins, aes(x = bill_length_mm, y = body_mass_g, color = species)) + \n  geom_point() +\n  geom_smooth() +\n  theme(legend.position = 'bottom')\n```\n\n\n\n\n\n\n\n\nFigure 1: Penguin bill length vs. body mass\n\n\n\n\nFor more details, see Margin Content in the Quarto documentation.\n\n\nLightbox figures\nFigures in the margins might be difficult to read, but you can use the lightbox: auto option in the YAML to make them clickable and viewable in a larger format. Click on the figure in the margin to see this in action.\n---\nlightbox: auto\n---\nSee the Lightbox Figures section of the Quarto documentation for more details.\n\n\nCode Annotation\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n1penguins |&gt;\n2  mutate(\n    bill_ratio = bill_depth_mm / bill_length_mm,\n    bill_area  = bill_depth_mm * bill_length_mm\n  ) |&gt;\n3  select(species, island, bill_ratio, bill_area)\n\n\n1\n\nTake penguins, and then…\n\n2\n\n…add new columns for the bill ratio and bill area, and finally…\n\n3\n\n…select only the species, island, bill ratio, and bill area columns.\n\n\n\n\n\n  \n\n\n\nSee Code Annotation for more details.\n\n\nCode Listings\nCode Listings\n\n\nConditional Content\nConditional Content",
     "crumbs": [
       "Code and Extensions",
       "Authoring with Code"
@@ -122,6 +111,13 @@
     "text": "Introduction to Quarto\n\nThe next evolution of R Markdown\nA publishing system for R, Python, and more\nCreates notebooks, dashboards, books, reports, presentations\n\n\n\nQuarto is a next-generation, open-source publishing system. It has expanded upon R Markdown to add new languages and can add more in the future. R Markdown has a lot of packages doing lots of different things, but Quarto has a shared expression for core features. Create dynamic content with Python, R, Julia, and Observable. Enable “single-source publishing” — create Word, PDFs, HTML, etc. from one source, you can make books, websites, presentations. There are many resources about Quarto, I gave a talk at R-Ladies St. Louis, and happy to link, but will only be sharing most critical aspects.\n\n\nquarto.org/"
   },
   {
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-examples",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-examples",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Quarto examples",
+    "text": "Quarto examples\n\n\n\n\n\n\n\nLink"
+  },
+  {
     "objectID": "slides/gateways-2026-tutorial/index.html#anatomy-of-a-quarto-document",
     "href": "slides/gateways-2026-tutorial/index.html#anatomy-of-a-quarto-document",
     "title": "Gateways 2026 Tutorial",
@@ -157,13 +153,6 @@
     "text": "Quarto extensions\nQuarto extension gallery by Mickaël Canouil\n\n\n\n\n\n\n\nLink"
   },
   {
-    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-examples",
-    "href": "slides/gateways-2026-tutorial/index.html#quarto-examples",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Quarto examples",
-    "text": "Quarto examples\n\n\n\n\n\n\n\nLink"
-  },
-  {
     "objectID": "slides/gateways-2026-tutorial/index.html#hands-on-activity",
     "href": "slides/gateways-2026-tutorial/index.html#hands-on-activity",
     "title": "Gateways 2026 Tutorial",
@@ -176,6 +165,13 @@
     "title": "Gateways 2026 Tutorial",
     "section": "",
     "text": "Enter the world of interactive R and Python in the browser. Running code directly in the browser opens the door for many new and exciting uses for data science on the web."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console",
+    "href": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Interactive R console",
+    "text": "Example: Interactive R console\n\n\n\n\n\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.\n\n\nhttps://webr.r-wasm.org/latest/"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#section-3",
@@ -203,21 +199,7 @@
     "href": "slides/gateways-2026-tutorial/index.html#section-5",
     "title": "Gateways 2026 Tutorial",
     "section": "",
-    "text": "Now, R has a similar solution with webR! WebR is the WebAssembly version of R that has been compiled to run in the browser. It’s an open-source project primarily driven by Posit, and thanks to the amazing work of many folks but especially George Stagg and Lionel Henry, it is possible to run R code directly in a web browser without the need for traditional servers to execute the code. A user can visit a website and run R code directly without R installed on their device. All that is required is a web server such as GitHub Pages or Netlify."
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console",
-    "href": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Example: Interactive R console",
-    "text": "Example: Interactive R console\n\n\n\n\n\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.\n\n\nhttps://webr.r-wasm.org/latest/"
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console-1",
-    "href": "slides/gateways-2026-tutorial/index.html#example-interactive-r-console-1",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Example: Interactive R console",
-    "text": "Example: Interactive R console\n\n\n\n\n\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.\n\n\nhttps://webr.r-wasm.org/latest/"
+    "text": "Now, R has a similar solution with webR! WebR is the WebAssembly version of R that has been compiled to run in the browser. It’s an open-source project primarily driven by Posit, and thanks to the amazing work of many folks but especially George Stagg and Lionel Henry, it is possible to run R code directly in a web browser without the need for traditional servers to execute the code. A user can visit a website and run R code directly without R installed on their device. All that is required is a web server such as GitHub Pages or Netlify.\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output."
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#packages-with-webr",
@@ -255,6 +237,20 @@
     "text": "Introduction to Quarto Live\nQuarto Live embeds WebAssembly powered code blocks and exercises for R and Python into Quarto documents with HTML-based output formats.\n\n\n\n\n\n\n\n\n\nAfter a short loading period, a Run code button will appear. R and Python code can be edited and executed in an editor like this one. Let’s run and edit this code as an example."
   },
   {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-claus-wilke-introduction-to-r",
+    "href": "slides/gateways-2026-tutorial/index.html#example-claus-wilke-introduction-to-r",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Claus Wilke Introduction to R",
+    "text": "Example: Claus Wilke Introduction to R\n\n\n\n\n\n\n\nhttps://wilkelab.org/SDS366/worksheets/intro-to-R.html"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-six-not-so-basic-base-r-functions",
+    "href": "slides/gateways-2026-tutorial/index.html#example-six-not-so-basic-base-r-functions",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Six not-so-basic base R functions",
+    "text": "Example: Six not-so-basic base R functions\n\n\n\n\n\n\n\nhttps://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/"
+  },
+  {
     "objectID": "slides/gateways-2026-tutorial/index.html#how-to-install-quarto-live",
     "href": "slides/gateways-2026-tutorial/index.html#how-to-install-quarto-live",
     "title": "Gateways 2026 Tutorial",
@@ -267,6 +263,20 @@
     "title": "Gateways 2026 Tutorial",
     "section": "How to install Quarto Live",
     "text": "How to install Quarto Live\nInstall the extension:\n\n\nTerminal\n\nquarto add r-wasm/quarto-live\n\nAdd to your Quarto document YAML header:\n\n\nexample.qmd\n\n---\nformat: live-html\nengine: knitr\n---\n\n{{&lt; include ./_extensions/r-wasm/live/_knitr.qmd &gt;}}"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#installing-packages",
+    "href": "slides/gateways-2026-tutorial/index.html#installing-packages",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Installing packages",
+    "text": "Installing packages\nAs the document loads\n\n\nexample.qmd\n\n---\nformat: live-html\nwebr:\n  packages:\n    - dplyr\n    - palmerpenguins\n    - ggplot2\n---"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#installing-packages-1",
+    "href": "slides/gateways-2026-tutorial/index.html#installing-packages-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Installing packages",
+    "text": "Installing packages\nInteractively\n\n\nexample.qmd\n\n```{webr}\ninstall.packages(\"dplyr\", quiet = TRUE)\n```"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#how-to-use-quarto-live",
@@ -290,46 +300,11 @@
     "text": "How to use Quarto Live\nOptions include:\n\nCreating read-only cells\nAutorun\nAutocomplete\nand more!"
   },
   {
-    "objectID": "slides/gateways-2026-tutorial/index.html#installing-packages",
-    "href": "slides/gateways-2026-tutorial/index.html#installing-packages",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Installing packages",
-    "text": "Installing packages\nAs the document loads\n\n\nexample.qmd\n\n---\nformat: live-html\nwebr:\n  packages:\n    - dplyr\n    - palmerpenguins\n    - ggplot2\n---"
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#installing-packages-1",
-    "href": "slides/gateways-2026-tutorial/index.html#installing-packages-1",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Installing packages",
-    "text": "Installing packages\nInteractively\n\n\nexample.qmd\n\n```{webr}\ninstall.packages(\"dplyr\", quiet = TRUE)\n```"
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#displaying-plots",
-    "href": "slides/gateways-2026-tutorial/index.html#displaying-plots",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Displaying plots",
-    "text": "Displaying plots\n\n\n\n\n\n\n\n\n\nAs mentioned earlier, you can also do plots with webR. Graphics work a bit different than normal. It has something called a graphics device that implements primitive drawing commands from R in the browser. It takes advantage of features in a browers when plotting R, things like fonts from other languages or emojis."
-  },
-  {
     "objectID": "slides/gateways-2026-tutorial/index.html#creating-exercises",
     "href": "slides/gateways-2026-tutorial/index.html#creating-exercises",
     "title": "Gateways 2026 Tutorial",
     "section": "Creating exercises",
     "text": "Creating exercises\nDesignating a webr chunk as an exercise (with optional setup code, hints, solutions, and grading).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\nConsider subtracting 1, 2, and 3 from 10.\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe answer is 4 ☺️"
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#example-claus-wilke-introduction-to-r",
-    "href": "slides/gateways-2026-tutorial/index.html#example-claus-wilke-introduction-to-r",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Example: Claus Wilke Introduction to R",
-    "text": "Example: Claus Wilke Introduction to R\n\n\n\n\n\n\n\nhttps://wilkelab.org/SDS366/worksheets/intro-to-R.html"
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#example-six-not-so-basic-base-r-functions",
-    "href": "slides/gateways-2026-tutorial/index.html#example-six-not-so-basic-base-r-functions",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Example: Six not-so-basic base R functions",
-    "text": "Example: Six not-so-basic base R functions\n\n\n\n\n\n\n\nhttps://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#webr-love",
@@ -339,11 +314,18 @@
     "text": "webR love 💜"
   },
   {
-    "objectID": "slides/gateways-2026-tutorial/index.html#hands-on-activity-1",
-    "href": "slides/gateways-2026-tutorial/index.html#hands-on-activity-1",
+    "objectID": "slides/gateways-2026-tutorial/index.html#quarto-live-reference",
+    "href": "slides/gateways-2026-tutorial/index.html#quarto-live-reference",
     "title": "Gateways 2026 Tutorial",
-    "section": "Hands-on activity",
-    "text": "Hands-on activity\nQuarto Live"
+    "section": "Quarto Live Reference",
+    "text": "Quarto Live Reference\nQuarto Live Reference"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#web-apps-for-statistics",
+    "href": "slides/gateways-2026-tutorial/index.html#web-apps-for-statistics",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Web apps for statistics",
+    "text": "Web apps for statistics\n\n\n\n\n\n\n\nVisualizing statistics"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-shiny",
@@ -364,14 +346,14 @@
     "href": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps",
     "title": "Gateways 2026 Tutorial",
     "section": "Hosting Shiny apps",
-    "text": "Hosting Shiny apps\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (enterprise)\nRoll your own\n\n\nCloud\n\nshinyapps.io\nPosit Connect Cloud\nHugging Face\nRoll your own\n\n\n\nThere are options for hosting Shiny apps, i.e., hosting their syervers, you could have RStudio Server on your laptop. But say you need scalability or additional security for your app, you could pay Posit money to have them host your servers for you with Posit Connect. There are also cloud-based solutions like shinyapps.io and Posit Connect. There’s a spectrum in terms of number of users, for some, it might just be a few people and for others, we’re talking thousands. There are also some in between, such as academics. Professors might have a few hundred folks looking at their apps, but they don’t have infrastructure or the resources to set it up."
+    "text": "Hosting Shiny apps\n\n\nOn-Prem\n\nShiny Server (open source)\nRoll your own\n\n\nCloud\n\nPosit Connect Cloud\nHugging Face\nRoll your own\n\n\n\nThere are options for hosting Shiny apps, i.e., hosting their syervers, you could have RStudio Server on your laptop. But say you need scalability or additional security for your app, you could pay Posit money to have them host your servers for you with Posit Connect. There are also cloud-based solutions like Posit Connect. There’s a spectrum in terms of number of users, for some, it might just be a few people and for others, we’re talking thousands. There are also some in between, such as academics. Professors might have a few hundred folks looking at their apps, but they don’t have infrastructure or the resources to set it up."
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps-1",
     "href": "slides/gateways-2026-tutorial/index.html#hosting-shiny-apps-1",
     "title": "Gateways 2026 Tutorial",
     "section": "Hosting Shiny apps",
-    "text": "Hosting Shiny apps\nSome web services offer scalability, features, and cost:\n\nGitHub Pages\nNetlify\nQuarto Pub\n\n\nBut they can’t run traditional Shiny apps!\n\nThis is static web hosting. And it’s great in terms of reach and affordabilty. You don’t have to think about servers anymore, you just give them your app files. But, there’s no way to run Shiny apps or dynamic R or Python code. If you’ve worked with Shiny in the past, you’ve probably embedded Shiny apps in an iFrame when you wanted to share them on a website."
+    "text": "Hosting Shiny apps\nSome web services offer scalability, features, and cost:\n\nGitHub Pages\nNetlify\n\n\nBut they can’t run traditional Shiny apps!\n\nThis is static web hosting. And it’s great in terms of reach and affordabilty. You don’t have to think about servers anymore, you just give them your app files. But, there’s no way to run Shiny apps or dynamic R or Python code. If you’ve worked with Shiny in the past, you’ve probably embedded Shiny apps in an iFrame when you wanted to share them on a website."
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#section-8",
@@ -379,6 +361,13 @@
     "title": "Gateways 2026 Tutorial",
     "section": "",
     "text": "With Shinylive, anybody can create their own serverless Shiny apps to run in the browser."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#example-claus-wilkes-color-picker-app",
+    "href": "slides/gateways-2026-tutorial/index.html#example-claus-wilkes-color-picker-app",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Example: Claus Wilke’s Color Picker App",
+    "text": "Example: Claus Wilke’s Color Picker App\n\n\n\n\n\n\n\nLink"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-shinylive",
@@ -444,25 +433,25 @@
     "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInsert a code block with {shinylive-python} or {shinylive-r}\n\n\nexample.qmd\n\n```{shinylive-python}\n#| standalone: true\n\n/* App code here */\n\n```"
   },
   {
-    "objectID": "slides/gateways-2026-tutorial/index.html#example-shiny-for-python-docs",
-    "href": "slides/gateways-2026-tutorial/index.html#example-shiny-for-python-docs",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Example: Shiny for Python docs",
-    "text": "Example: Shiny for Python docs\n\n\n\n\n\n\n\nLink"
-  },
-  {
-    "objectID": "slides/gateways-2026-tutorial/index.html#example-claus-wilkes-color-picker-app",
-    "href": "slides/gateways-2026-tutorial/index.html#example-claus-wilkes-color-picker-app",
-    "title": "Gateways 2026 Tutorial",
-    "section": "Example: Claus Wilke’s Color Picker App",
-    "text": "Example: Claus Wilke’s Color Picker App\n\n\n\n\n\n\n\nLink"
-  },
-  {
     "objectID": "slides/gateways-2026-tutorial/index.html#example-shiny-assistant",
     "href": "slides/gateways-2026-tutorial/index.html#example-shiny-assistant",
     "title": "Gateways 2026 Tutorial",
     "section": "Example: Shiny Assistant",
-    "text": "Example: Shiny Assistant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLink"
+    "text": "Example: Shiny Assistant\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#publishing",
+    "href": "slides/gateways-2026-tutorial/index.html#publishing",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Publishing",
+    "text": "Publishing"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#thank-you",
+    "href": "slides/gateways-2026-tutorial/index.html#thank-you",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Thank you",
+    "text": "Thank you\nSlides borrowed heavily from Isabella Velásquez.\nReference Website: https://mdlama.github.io/oerquarto/\nSlides: https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial\nQuestions?"
   },
   {
     "objectID": "quarto_live.html",
