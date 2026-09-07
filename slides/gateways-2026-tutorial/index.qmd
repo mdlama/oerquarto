@@ -13,6 +13,7 @@ format:
     footer: "https://mdlama.github.io/gateways-2026-tutorial/"
     revealjs-plugins:
       - drop
+  pptx: default
 knitr: 
   opts_chunk: 
     fig.align: center
