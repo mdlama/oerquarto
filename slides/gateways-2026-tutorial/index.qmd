@@ -133,12 +133,36 @@ We will establish, incubate, and sustain an Open Education Ecosystem (OEE) desig
 
 ## The Anatomy of an "Open" Resource
 
-Three rows
-
+::: {.incremental}
  - Resource Type (Book, Lab, Lecture, Assignment, ...)
  - Resource Format (PDF, DOCX, HTML, ...)
- - Authoring (+Publishing) Platforms (LearnGala, OERCommons (Open Author), Pressbooks, Manifold, Quarto, PreTeXt/Plus, ...)
+:::
 
+. . .
+
+The majority of formats used for OER are not modifiable, and therefore the majority of modifications are not shared back to the community.
+
+## OER Authoring + Publishing
+
+Examples (platforms, authoring tools, publishing, etc.):
+
+::: {.incremental}
+ - [LearnGala](https://www.learngala.com/): [Example](https://www.learngala.com/cases/jalapenos)
+ - [OERCommons (Open Author)](https://oercommons.org/): [More info](https://oercommons.org/authoring-overview)
+ - [Pressbooks](https://pressbooks.com/): [Example](https://integrations.pressbooks.network/webliteracy/)
+ - [Manifold](https://manifoldapp.org/): [Example](https://manifold.open.umn.edu/projects/cornerstone2nd)
+ - [PreTeXt](https://pretextbook.org/)/[Plus](https://pretext.plus/): [Example](https://runestone.academy/ns/books/published/PTXSB/sample-book.html)
+ - [Quarto](https://quarto.org/): [Examples](https://jjallaire.github.io/hopr/)
+:::
+
+## OER Authoring + Publishing
+
+Notebooks:
+
+ - [Jupyter](https://jupyter.org/): [More info](https://jupyter.org/try)
+ - [Observable](https://observablehq.com/): [Example](https://observablehq.com/d/894758716da3f579)
+ - [Marimo](https://marimo.io/): [Example](https://molab.marimo.io/notebooks/nb_g86XM32SPLfeAzs8egFKmL)
+ 
 ##  {background-image="images/quarto.png"}
 
 ## Introduction to Quarto
@@ -826,7 +850,7 @@ filters:
 Insert a code block with `{shinylive-python}` or `{shinylive-r}`
 
 ```` {.qmd filename="example.qmd"}
-```{{shinylive-python}}
+```{{shinylive-r}}
 #| standalone: true
 
 /* App code here */
@@ -842,14 +866,44 @@ Insert a code block with `{shinylive-python}` or `{shinylive-r}`
 [Link](https://gallery.shinyapps.io/assistant/#)
 :::
 
-## Publishing
+## Publishing: Option #1
+
+[Posit Connect Cloud](https://connect.posit.cloud/): <https://connect.posit.cloud/>
+
+::: {.incremental}
+ - Pro: Free
+ - Pro: Easiest publishing solution
+ - Pro: Great for students sharing work
+ - Con: Does not share files (**_non-adaptable_**)
+:::
+
+. . .
+
+![](images/posit-publish.png){width="80%" fig-align="center"}
+
+## Publishing: Option #2
+
+[GitHub/GitHub Pages](https://github.com): <https://github.com>
+
+::: {.incremental}
+ - Pro: Free
+ - Pro: Files are accessible (**_adaptable_**)
+ - Con: More complicated setup (some `git` knowledge)
+:::
+
+. . .
+
+[Detailed instructions](https://quarto.org/docs/publishing/github-pages.html)
 
 ## Thank you
 
 Slides borrowed heavily from [Isabella Velásquez](https://ivelasq.rbind.io/).
 
-Reference Website: https://mdlama.github.io/oerquarto/
+Reference Website: <https://mdlama.github.io/oerquarto/>
 
-Slides: https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial
+Slides: <https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial>
 
+<p>
+<center>
 Questions?
+</center>
