@@ -159,9 +159,11 @@ Examples (platforms, authoring tools, publishing, etc.):
 
 Notebooks:
 
+::: {.incremental}
  - [Jupyter](https://jupyter.org/): [More info](https://jupyter.org/try)
  - [Observable](https://observablehq.com/): [Example](https://observablehq.com/d/894758716da3f579)
  - [Marimo](https://marimo.io/): [Example](https://molab.marimo.io/notebooks/nb_g86XM32SPLfeAzs8egFKmL)
+:::
  
 ##  {background-image="images/quarto.png"}
 
