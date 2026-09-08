@@ -29,6 +29,21 @@ Please introduce yourself:
 - Organization/Institution
 - Why are you here?
 
+## Outline {.smaller}
+
+| Time | Topic | Activity |
+|----|-----|--------|
+| 1:00-1:15 | Welcome and Intros | Discussion |
+| 1:15-1:35 | OER and Quarto | Slides |
+| 1:35-2:05 | Quarto Tutorial | Hands-on |
+| 2:05-2:25 | Live Code: Intro to WebAssembly | Slides |
+| 2:25-2:35 | Break | Break |
+| 2:35-3:00 | Quarto Live Tutorial | Hands-on |
+| 3:00-3:15 | Interactives: Shiny + Shinylive | Slides |
+| 3:15-3:30 | Shinylive Tutorial | Hands-on |
+| 3:30-3:45 | Publishing | Hands-on |
+| 3:45-4:00 | Wrap-up and Q&A | Discussion |
+
 ## {.smaller style="margin-top: -60px;"}
 
 :::: {.columns}
