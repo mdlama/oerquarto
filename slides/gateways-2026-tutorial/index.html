@@ -321,11 +321,33 @@
 </section>
 <section id="the-anatomy-of-an-open-resource" class="slide level2">
 <h2>The Anatomy of an “Open” Resource</h2>
-<p>Three rows</p>
 <ul>
-<li>Resource Type (Book, Lab, Lecture, Assignment, …)</li>
-<li>Resource Format (PDF, DOCX, HTML, …)</li>
-<li>Authoring (+Publishing) Platforms (LearnGala, OERCommons (Open Author), Pressbooks, Manifold, Quarto, PreTeXt/Plus, …)</li>
+<li class="fragment">Resource Type (Book, Lab, Lecture, Assignment, …)</li>
+<li class="fragment">Resource Format (PDF, DOCX, HTML, …)</li>
+</ul>
+<div class="fragment">
+<p>The majority of formats used for OER are not modifiable, and therefore the majority of modifications are not shared back to the community.</p>
+</div>
+</section>
+<section id="oer-authoring-publishing" class="slide level2">
+<h2>OER Authoring + Publishing</h2>
+<p>Examples (platforms, authoring tools, publishing, etc.):</p>
+<ul>
+<li class="fragment"><a href="https://www.learngala.com/">LearnGala</a>: <a href="https://www.learngala.com/cases/jalapenos">Example</a></li>
+<li class="fragment"><a href="https://oercommons.org/">OERCommons (Open Author)</a>: <a href="https://oercommons.org/authoring-overview">More info</a></li>
+<li class="fragment"><a href="https://pressbooks.com/">Pressbooks</a>: <a href="https://integrations.pressbooks.network/webliteracy/">Example</a></li>
+<li class="fragment"><a href="https://manifoldapp.org/">Manifold</a>: <a href="https://manifold.open.umn.edu/projects/cornerstone2nd">Example</a></li>
+<li class="fragment"><a href="https://pretextbook.org/">PreTeXt</a>/<a href="https://pretext.plus/">Plus</a>: <a href="https://runestone.academy/ns/books/published/PTXSB/sample-book.html">Example</a></li>
+<li class="fragment"><a href="https://quarto.org/">Quarto</a>: <a href="https://jjallaire.github.io/hopr/">Examples</a></li>
+</ul>
+</section>
+<section id="oer-authoring-publishing-1" class="slide level2">
+<h2>OER Authoring + Publishing</h2>
+<p>Notebooks:</p>
+<ul>
+<li><a href="https://jupyter.org/">Jupyter</a>: <a href="https://jupyter.org/try">More info</a></li>
+<li><a href="https://observablehq.com/">Observable</a>: <a href="https://observablehq.com/d/894758716da3f579">Example</a></li>
+<li><a href="https://marimo.io/">Marimo</a>: <a href="https://molab.marimo.io/notebooks/nb_g86XM32SPLfeAzs8egFKmL">Example</a></li>
 </ul>
 </section>
 <section id="section-1" class="slide level2" data-background-image="images/quarto.png">
@@ -1266,7 +1288,7 @@ eyJhdHRyIjp7ImNoZWNrIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJleGVyY2lzZSI6ImV4
 <div class="code-with-filename-file">
 <pre><strong>example.qmd</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24" data-filename="example.qmd"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a aria-label="1"></a><span class="in">```{shinylive-python}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24" data-filename="example.qmd"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a aria-label="1"></a><span class="in">```{shinylive-r}</span></span>
 <span id="cb24-2"><a aria-label="2"></a><span class="co">#| standalone: true</span></span>
 <span id="cb24-3"><a aria-label="3"></a></span>
 <span id="cb24-4"><a aria-label="4"></a><span class="ex">/*</span> App code here <span class="pp">*</span>/</span>
@@ -1285,15 +1307,44 @@ eyJhdHRyIjp7ImNoZWNrIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJleGVyY2lzZSI6ImV4
 <aside><div>
 <p><a href="https://gallery.shinyapps.io/assistant/#">Link</a></p>
 </div></aside></section>
-<section id="publishing" class="slide level2">
-<h2>Publishing</h2>
+<section id="publishing-option-1" class="slide level2">
+<h2>Publishing: Option #1</h2>
+<p><a href="https://connect.posit.cloud/">Posit Connect Cloud</a>: <a href="https://connect.posit.cloud/" class="uri">https://connect.posit.cloud/</a></p>
+<ul>
+<li class="fragment">Pro: Free</li>
+<li class="fragment">Pro: Easiest publishing solution</li>
+<li class="fragment">Pro: Great for students sharing work</li>
+<li class="fragment">Con: Does not share files (<strong><em>non-adaptable</em></strong>)</li>
+</ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/posit-publish.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="publishing-option-2" class="slide level2">
+<h2>Publishing: Option #2</h2>
+<p><a href="https://github.com">GitHub/GitHub Pages</a>: <a href="https://github.com" class="uri">https://github.com</a></p>
+<ul>
+<li class="fragment">Pro: Free</li>
+<li class="fragment">Pro: Files are accessible (<strong><em>adaptable</em></strong>)</li>
+<li class="fragment">Con: More complicated setup (some <code>git</code> knowledge)</li>
+</ul>
+<div class="fragment">
+<p><a href="https://quarto.org/docs/publishing/github-pages.html">Detailed instructions</a></p>
+</div>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you</h2>
 <p>Slides borrowed heavily from <a href="https://ivelasq.rbind.io/">Isabella Velásquez</a>.</p>
-<p>Reference Website: https://mdlama.github.io/oerquarto/</p>
-<p>Slides: https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial</p>
-<p>Questions?</p>
+<p>Reference Website: <a href="https://mdlama.github.io/oerquarto/" class="uri">https://mdlama.github.io/oerquarto/</a></p>
+<p>Slides: <a href="https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial" class="uri">https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial</a></p>
+<p>
+</p><center>
+Questions?
+</center>
 
 
 <script type="webr-data">

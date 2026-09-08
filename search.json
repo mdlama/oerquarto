@@ -101,7 +101,21 @@
     "href": "slides/gateways-2026-tutorial/index.html#the-anatomy-of-an-open-resource",
     "title": "Gateways 2026 Tutorial",
     "section": "The Anatomy of an “Open” Resource",
-    "text": "The Anatomy of an “Open” Resource\nThree rows\n\nResource Type (Book, Lab, Lecture, Assignment, …)\nResource Format (PDF, DOCX, HTML, …)\nAuthoring (+Publishing) Platforms (LearnGala, OERCommons (Open Author), Pressbooks, Manifold, Quarto, PreTeXt/Plus, …)"
+    "text": "The Anatomy of an “Open” Resource\n\nResource Type (Book, Lab, Lecture, Assignment, …)\nResource Format (PDF, DOCX, HTML, …)\n\n\nThe majority of formats used for OER are not modifiable, and therefore the majority of modifications are not shared back to the community."
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#oer-authoring-publishing",
+    "href": "slides/gateways-2026-tutorial/index.html#oer-authoring-publishing",
+    "title": "Gateways 2026 Tutorial",
+    "section": "OER Authoring + Publishing",
+    "text": "OER Authoring + Publishing\nExamples (platforms, authoring tools, publishing, etc.):\n\nLearnGala: Example\nOERCommons (Open Author): More info\nPressbooks: Example\nManifold: Example\nPreTeXt/Plus: Example\nQuarto: Examples"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#oer-authoring-publishing-1",
+    "href": "slides/gateways-2026-tutorial/index.html#oer-authoring-publishing-1",
+    "title": "Gateways 2026 Tutorial",
+    "section": "OER Authoring + Publishing",
+    "text": "OER Authoring + Publishing\nNotebooks:\n\nJupyter: More info\nObservable: Example\nMarimo: Example"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#introduction-to-quarto",
@@ -430,7 +444,7 @@
     "href": "slides/gateways-2026-tutorial/index.html#how-to-use-shinylive-6",
     "title": "Gateways 2026 Tutorial",
     "section": "How to use Shinylive",
-    "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInsert a code block with {shinylive-python} or {shinylive-r}\n\n\nexample.qmd\n\n```{shinylive-python}\n#| standalone: true\n\n/* App code here */\n\n```"
+    "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInsert a code block with {shinylive-python} or {shinylive-r}\n\n\nexample.qmd\n\n```{shinylive-r}\n#| standalone: true\n\n/* App code here */\n\n```"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#example-shiny-assistant",
@@ -440,18 +454,25 @@
     "text": "Example: Shiny Assistant\n\n\n\n\n\n\n\nLink"
   },
   {
-    "objectID": "slides/gateways-2026-tutorial/index.html#publishing",
-    "href": "slides/gateways-2026-tutorial/index.html#publishing",
+    "objectID": "slides/gateways-2026-tutorial/index.html#publishing-option-1",
+    "href": "slides/gateways-2026-tutorial/index.html#publishing-option-1",
     "title": "Gateways 2026 Tutorial",
-    "section": "Publishing",
-    "text": "Publishing"
+    "section": "Publishing: Option #1",
+    "text": "Publishing: Option #1\nPosit Connect Cloud: https://connect.posit.cloud/\n\nPro: Free\nPro: Easiest publishing solution\nPro: Great for students sharing work\nCon: Does not share files (non-adaptable)"
+  },
+  {
+    "objectID": "slides/gateways-2026-tutorial/index.html#publishing-option-2",
+    "href": "slides/gateways-2026-tutorial/index.html#publishing-option-2",
+    "title": "Gateways 2026 Tutorial",
+    "section": "Publishing: Option #2",
+    "text": "Publishing: Option #2\nGitHub/GitHub Pages: https://github.com\n\nPro: Free\nPro: Files are accessible (adaptable)\nCon: More complicated setup (some git knowledge)\n\n\nDetailed instructions"
   },
   {
     "objectID": "slides/gateways-2026-tutorial/index.html#thank-you",
     "href": "slides/gateways-2026-tutorial/index.html#thank-you",
     "title": "Gateways 2026 Tutorial",
     "section": "Thank you",
-    "text": "Thank you\nSlides borrowed heavily from Isabella Velásquez.\nReference Website: https://mdlama.github.io/oerquarto/\nSlides: https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial\nQuestions?"
+    "text": "Thank you\nSlides borrowed heavily from Isabella Velásquez.\nReference Website: https://mdlama.github.io/oerquarto/\nSlides: https://mdlama.github.io/oerquarto/slides/gateways-2026-tutorial\n\n\nQuestions?"
   },
   {
     "objectID": "quarto_live.html",
@@ -544,16 +565,6 @@
     "title": "Publishing",
     "section": "How to publish",
     "text": "How to publish\nIn the Terminal, navigate to the directory where your Quarto document is located and run the following command:\nquarto publish posit-connect-cloud",
-    "crumbs": [
-      "Publishing"
-    ]
-  },
-  {
-    "objectID": "publishing.html#setting-up-git-and-github-for-a-project",
-    "href": "publishing.html#setting-up-git-and-github-for-a-project",
-    "title": "Publishing",
-    "section": "Setting up git and GitHub for a project",
-    "text": "Setting up git and GitHub for a project\ngit init\ngit add",
     "crumbs": [
       "Publishing"
     ]
